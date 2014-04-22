@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testdata>
+    <vars locator="//ul[@id='nav']/li[9]/a/span" title="Summit Club"/>
+    <vars locator="css=ul.level-1 &amp;gt; li &amp;gt; a &amp;gt; span" title="Summit Club Newsletters"/>
+    <vars locator="//div[@id='content']/div/div/div/ul/li/ul/li[2]/a/span" title="Summit Club Partners"/>
+    <vars locator="//div[@id='content']/div/div/div/ul/li/ul/li[3]/a/span" title="Summit Club FAQs"/>
+    <vars locator="//div[@id='content']/div/div/div/ul/li/ul/li[4]/a/span" title="Summit Club Terms &amp;amp; Conditions"/>
+    <vars locator="//div[@id='content']/div/div/div/ul/li/ul/li[5]/a/span" title="Crew Wanted"/>
+    <vars locator="link=Rewarding Your Spend" title="Rewarding Your Spend"/>
+</testdata>

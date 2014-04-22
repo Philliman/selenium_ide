@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testdata>
+    <vars locator="css=a.logo &gt; img[alt=&quot;Kathmandu&quot;]" title="Kathmandu | Shop Outdoor Clothing, Camping &amp; Travel Gear Australia"/>
+    <vars locator="css=a[title=&quot;Contact Kathmandu&quot;]" title="Contact Us"/>
+    <vars locator="css=a[title=&quot;Kathmandu Store Locator&quot;]" title="Kathmandu"/>
+    <vars locator="link=FAQs" title="Frequently Asked Questions"/>
+    <vars locator="//div[@id='content']/div/div/div/ul/li[6]/ul/li[2]/a/span" title="Delivery and Shipping"/>
+    <vars locator="//div[@id='content']/div/div/div/ul/li[6]/ul/li[3]/a/span" title="Returns and Exchanges"/>
+    <vars locator="link=International Shipping" title="International Shipping | Kathmandu"/>
+    <vars locator="//div[@id='content']/div/div/div/ul/li[6]/ul/li[5]/a/span" title="About My Account"/>
+    <vars locator="//div[@id='content']/div/div/div/ul/li[6]/ul/li[6]/a/span" title="Product Safety"/>
+    <vars locator="link=Aluminium Canteen Product Recall" title="Product Safety | Aluminium Canteen Product Recall"/>
+    <vars locator="//div[@id='content']/div/div/div/ul/li[6]/ul/li[6]/ul/li[2]/a/span" title="Product Recall | Sip N Snack Bottle"/>
+    <vars locator="link=Delivery &amp; Shipping" title="Delivery and Shipping"/>
+    <vars locator="css=a[title=&quot;About My Account&quot;]" title="About My Account"/>
+    <vars locator="link=Product Safety" title="Product Safety"/>
+    <vars locator="css=a[title=&quot;Product Safety Information&quot;]" title="Product Safety"/>
+    <vars locator="link=Returns &amp; Exchanges" title="Returns and Exchanges"/>
+</testdata>

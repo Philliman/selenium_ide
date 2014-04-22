@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta content="text/html; charset=UTF-8" http-equiv="content-type" />
+  <title>Test Suite</title>
+</head>
+<body>
+<table id="suiteTable" cellpadding="1" cellspacing="1" border="1" class="selenium"><tbody>
+<tr><td><b>Test Suite</b></td></tr>
+<tr><td><a href="CreateOrders.html">CreateOrders</a></td></tr>
+<tr><td><a href="orderPayByGiftCard.html">orderPayByGiftCard</a></td></tr>
+<tr><td><a href="extensionTest.html">extensionJS_Test</a></td></tr>
+<tr><td><a href="Temando_Orders.html">Order1</a></td></tr>
+<tr><td><a href="Temando_Order2.html">order2</a></td></tr>
+<tr><td><a href="Temando_Order3.html">Order3</a></td></tr>
+<tr><td><a href="Order4_NZ.html">Order4</a></td></tr>
+<tr><td><a href="Temando_Order5.html">Order5</a></td></tr>
+<tr><td><a href="Order1_AU.html">Order1_AU</a></td></tr>
+<tr><td><a href="Order1_NZ.html">Order1_NZ</a></td></tr>
+<tr><td><a href="Order2_AU.html">Order2_AU</a></td></tr>
+<tr><td><a href="Order2_NZ.html">Order2_NZ</a></td></tr>
+<tr><td><a href="Order3_AU.html">Order3_AU</a></td></tr>
+<tr><td><a href="Order3_NZ.html">Order3_NZ</a></td></tr>
+<tr><td><a href="Order4_AU.html">Order4_AU</a></td></tr>
+<tr><td><a href="Order4_NZ.html">Order4_NZ</a></td></tr>
+<tr><td><a href="Order5_AU.html">Order5_AU</a></td></tr>
+<tr><td><a href="Order5_NZ.html">Order5_NZ</a></td></tr>
+<tr><td><a href="TemandoFreeDelivery.html">TemandoFreeDelivery</a></td></tr>
+<tr><td><a href="DeleteMyCartItems.html">DeleteMyCartItems</a></td></tr>
+<tr><td><a href="AutoFillIn@NZCheckout.html">Autofill_NZ_Checkout</a></td></tr>
+<tr><td><a href="AUaddFillinAtCheckout.html">AutofillinAUSonCheckour</a></td></tr>
+<tr><td><a href="Autofillin_UK_Checkout.html">AutofillinUKCheckout</a></td></tr>
+<tr><td><a href="SearchSKUAndAddToCart.html">SearchSKUAndAddToCart</a></td></tr>
+<tr><td><a href="SearchItemsAndAddToCart_AU.html">SearchItemsAndAddToCart_AU</a></td></tr>
+<tr><td><a href="SearchPlaceOrder_NZ.html">SearchPlaceOrder_NZ</a></td></tr>
+<tr><td><a href="eVoucherOnlyOrder.html">eVoucherOnlyOrder</a></td></tr>
+<tr><td><a href="PaypalPaymentMethod.html">PaypalPaymentMethod</a></td></tr>
+<tr><td><a href="DeleteTAFCreatedTestUsers.html">DeleteTAFCreatedTestUsers</a></td></tr>
+<tr><td><a href="InternationalShippingUSA.html">InternationalShippingUSA</a></td></tr>
+<tr><td><a href="InternationalShippingNepal.html">InternationalShippingNepal</a></td></tr>
+<tr><td><a href="InternationalShippingJapan.html">InternationalShippingJapan</a></td></tr>
+<tr><td><a href="IntShippingCanada.html">IntShippingCanada</a></td></tr>
+<tr><td><a href="IntShippingPakistan.html">IntShippingPakistan</a></td></tr>
+<tr><td><a href="IntShpAUToUSA.html">IntShpAUToUSA</a></td></tr>
+<tr><td><a href="IntShpAUToNepal.html">IntShpAUTONepal</a></td></tr>
+<tr><td><a href="IntShpAUToJapan.html">UntShpAUToJapan</a></td></tr>
+<tr><td><a href="IntShpAUToCanada.html">IntShpAUToCanada</a></td></tr>
+</tbody></table>
+</body>
+</html>

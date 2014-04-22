@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://au.kmdproduction.tundra.com.au/" />
+<title>goThroughEveryPagesByXpath</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">goThroughEveryPagesByXpath</td></tr>
+</thead><tbody>
+<tr>
+	<td>storeEval</td>
+	<td>&quot;xpath=html/body/div[1]/div/div[1]/div[3]/ul/li[&quot;</td>
+	<td>topMenuPrefix</td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>&quot;]/a/span&quot;</td>
+	<td>topMenuPostfix</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>xpath=html/body/div[1]/div/div[2]/div/div/div[1]/div[1]/ol/li[</td>
+	<td>sideMenuPrefix</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>]/a</td>
+	<td>sideMenuPostfix</td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>{storedVars[&quot;topItems&quot;]=1, storedVars[&quot;sideItems&quot;]=2, storedVars[&quot;topMenuItem&quot;]=storedVars['topMenuPrefix']+ storedVars['topItems'] + storedVars['topMenuPostfix'], storedVars[&quot;siteMenuItem&quot;]=storedVars['sideMenuPrefix'] +storedVars['sideItems']+storedVars['sideMenuPostfix'] }</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeElementPresent</td>
+	<td>${topMenuItem}</td>
+	<td>itemPresentsInTopmenu</td>
+</tr>
+<tr>
+	<td>while</td>
+	<td>${itemPresentsInTopmenu}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>${topMenuItem}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeElementPresent</td>
+	<td>${siteMenuItem}</td>
+	<td>itemPresentsInSidemenu</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>itemPresentsInSidemenu = ${itemPresentsInSidemenu}, siteMenuItem = ${siteMenuItem}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>call</td>
+	<td>clickAndWaitOnSideItems</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>{storedVars[&quot;topItems&quot;]++, storedVars[&quot;sideItems&quot;]=2, storedVars[&quot;topMenuItem&quot;]=storedVars['topMenuPrefix'] + storedVars['topItems'] + storedVars['topMenuPostfix'] , storedVars[&quot;siteMenuItem&quot;]=storedVars['sideMenuPrefix'] +storedVars['sideItems']+storedVars['sideMenuPostfix'] }</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>topMenuItem = ${topMenuItem},&nbsp;&nbsp;itemPresentsInTopmenu ${itemPresentsInTopmenu}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>sideMenu = ${sideMenu}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeElementPresent</td>
+	<td>${topMenuItem}</td>
+	<td>itemPresentsInTopmenu</td>
+</tr>
+<tr>
+	<td>endWhile</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>function</td>
+	<td>doSomething</td>
+	<td></td>
+</tr>
+<tr>
+	<td>endFunction</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>function</td>
+	<td>clickAndWaitOnSideItems</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>itemPresentsInSidemenu =${itemPresentsInSidemenu}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>while</td>
+	<td>${itemPresentsInSidemenu}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>${siteMenuItem}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>call</td>
+	<td>doSomething</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>[storedVars['sideItems']++,storedVars[&quot;siteMenuItem&quot;]=storedVars['sideMenuPrefix'] +storedVars['sideItems']+storedVars['sideMenuPostfix']]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeElementPresent</td>
+	<td>${siteMenuItem}</td>
+	<td>itemPresentsInSidemenu</td>
+</tr>
+<tr>
+	<td>endWhile</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>endFunction</td>
+	<td></td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

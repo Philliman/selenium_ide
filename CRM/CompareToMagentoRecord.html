@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://nz.kmdtest.tundra.com.au/" />
+<title>CompareToMagentoRecord</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">CompareToMagentoRecord</td></tr>
+</thead><tbody>
+<tr>
+	<td>store</td>
+	<td>http://nz.kmdtest.tundra.com.au/admin</td>
+	<td>kmdtest</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>http://nz.master.kathmandu.co.nz/admin</td>
+	<td>kmdUpgrade</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>http://master.kathmandu.co.nz/admin</td>
+	<td>Production</td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>${Production}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//ul[@id='nav']/li[6]/ul/li/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=customerGrid_filter_summit_club_id</td>
+	<td>${summitClubID}</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//button[@title=&quot;Search&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>xpath=html/body/div[1]/div[2]/div/div[3]/div/div/div/table/tbody/tr/td[5]</td>
+	<td>${summitClubID}</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>xpath=html/body/div[1]/div[2]/div/div[3]/div/div/div/table/tbody/tr/td[5]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=#customer_info_tabs_account &gt; span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=_accountfirstname</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=_accountfirstname</td>
+	<td>${FirstName}</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=_accountlastname</td>
+	<td>${LastName}</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=_accountemail</td>
+	<td>${EmailAddress1}</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=_accountdob</td>
+	<td>${DOB}</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=_accountsummit_club_id</td>
+	<td>${summitClubID}</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=_accountsummit_club_expires</td>
+	<td>${ExpiryDate}</td>
+</tr>
+<tr>
+	<td>if</td>
+	<td>javascript{storedVars['JoinDate'].length&lt;10}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${length}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${JoinDate}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>javascript{'0'+storedVars['JoinDate']}</td>
+	<td>JoinDate</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${JoinDate}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>endIf</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=_accountsummitclub_join_date</td>
+	<td>${JoinDate}</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=_accounttelephone</td>
+	<td>${HomePhone}</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=_accountmobile_no</td>
+	<td>${MobilePhone}</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=#customer_info_tabs_addresses &gt; span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>xpath=html/body/div[1]/div[2]/div/div/div[2]/div/div[3]/form/div[5]/table/tbody/tr/td[2]/div[3]/div/div[2]/div/table/tbody/tr[2]/td[2]/input</td>
+	<td>${FirstName}</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>xpath=html/body/div[1]/div[2]/div/div/div[2]/div/div[3]/form/div[5]/table/tbody/tr/td[2]/div[3]/div/div[2]/div/table/tbody/tr[2]/td[2]/input</td>
+	<td>${FirstName}</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>xpath=html/body/div[1]/div[2]/div/div/div[2]/div/div[3]/form/div[5]/table/tbody/tr/td[2]/div[3]/div/div[2]/div/table/tbody/tr[4]/td[2]/input</td>
+	<td>${LastName}</td>
+</tr>
+<tr>
+	<td>verifySelectedLabel</td>
+	<td>xpath=html/body/div[1]/div[2]/div/div/div[2]/div/div[3]/form/div[5]/table/tbody/tr/td[2]/div[3]/div/div[2]/div/table/tbody/tr[9]/td[2]/select</td>
+	<td>${Country}</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>xpath=html/body/div[1]/div[2]/div/div/div[2]/div/div[3]/form/div[5]/table/tbody/tr/td[2]/div[3]/div/div[2]/div/table/tbody/tr[7]/td[2]/div[1]/input</td>
+	<td>${address1_line1}</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>xpath=html/body/div[1]/div[2]/div/div/div[2]/div/div[3]/form/div[5]/table/tbody/tr/td[2]/div[3]/div/div[2]/div/table/tbody/tr[7]/td[2]/div[2]/input</td>
+	<td>${address1_line2}</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>xpath=html/body/div[1]/div[2]/div/div/div[2]/div/div[3]/form/div[5]/table/tbody/tr/td[2]/div[3]/div/div[2]/div/table/tbody/tr[8]/td[2]/input</td>
+	<td>${address1_line3}</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>xpath=html/body/div[1]/div[2]/div/div/div[2]/div/div[3]/form/div[5]/table/tbody/tr/td[2]/div[3]/div/div[2]/div/table/tbody/tr[11]/td[2]/input</td>
+	<td>${postCode}</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>xpath=html/body/div[1]/div[2]/div/div/div[2]/div/div[3]/form/div[5]/table/tbody/tr/td[2]/div[3]/div/div[2]/div/table/tbody/tr[15]/td[2]/input</td>
+	<td>${address1_city}</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>xpath=html/body/div[1]/div[2]/div/div/div[2]/div/div[3]/form/div[5]/table/tbody/tr/td[2]/div[3]/div/div[2]/div/table/tbody/tr[12]/td[2]/input</td>
+	<td>${HomePhone}</td>
+</tr>
+</tbody></table>
+</body>
+</html>

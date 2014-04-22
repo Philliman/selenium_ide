@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testdata>
+    <vars locator="//ul[@id='nav']/li[6]/a/span" title="Sleeping Gear | Sleeping Bags Mats Liners Pillows | Kathmandu NZ"/>
+    <vars locator="xpath=(//a[contains(text(),'Sleeping Bags')])[2]" title="Sleeping Bags | Goose Duck Down Kids Backpack Travel | Kathmandu NZ"/>
+    <vars locator="xpath=(//a[contains(text(),'Beds')])[2]" title="Camping Beds | Air Bed Single Double Mattresses | Kathmandu NZ"/>
+    <vars locator="xpath=(//a[contains(text(),'Mats')])[2]" title="Camping Mats | Foam Mat Inflatable Mats Hike | Kathmandu NZ"/>
+    <vars locator="xpath=(//a[contains(text(),'Liners')])[2]" title="Sleeping Bag Liners | Silk Cotton Carry Sack Rip Stop | Kathmandu NZ"/>
+    <vars locator="xpath=(//a[contains(text(),'Accessories')])[10]" title="Sleeping Accessories | Pillows Travel Kids Compression | Kathmandu NZ"/>
+</testdata>

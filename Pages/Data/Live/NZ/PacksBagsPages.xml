@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testdata>
+    <vars locator="css=a.logo &gt; img[alt=&quot;Kathmandu&quot;]" title="Kathmandu | Shop Outdoor Clothing, Camping &amp; Travel Gear NZ"/>
+    <vars locator="//ul[@id='nav']/li[4]/a/span" title="Backpacks &amp; Bags | Backpacks Luggage Hiking Packs | Kathmandu NZ"/>
+    <vars locator="xpath=(//a[contains(text(),'Packs')])[5]" title="Backpacks | Travel Backpack Tramping Running Packs | Kathmandu NZ"/>
+    <vars locator="xpath=(//a[contains(text(),'Bags')])[6]" title="Bags | Cargo Sports Bags Beltbag Ski Rollerbag | Kathmandu NZ"/>
+    <vars locator="xpath=(//a[contains(text(),'Day Packs')])[2]" title="Day Packs | Laptop Backpack Commute School Bag | Kathmandu NZ"/>
+    <vars locator="xpath=(//a[contains(text(),'Trolleys')])[2]" title="Luggage Bags | Trolley Wheely Travel Bag Carry-On Case | Kathmandu NZ"/>
+    <vars locator="xpath=(//a[contains(text(),'Hybrids')])[2]" title="Travel Backpack | Rucksack Hybrid Daypack w/ Harness | Kathmandu NZ"/>
+    <vars locator="xpath=(//a[contains(text(),'Child Carriers')])[2]" title="Child Carriers | Child Carrier Backpack Hiking| Kathmandu NZ"/>
+    <vars locator="xpath=(//a[contains(text(),'Packing Solutions')])[2]" title="Packing Solutions | Stuff Sacks Toiletry Bag Cells | Kathmandu NZ"/>
+    <vars locator="xpath=(//a[contains(text(),'Accessories')])[10]" title="Luggage Accessories | Money Belt Locks Wallet Tags | Kathmandu NZ"/>
+</testdata>

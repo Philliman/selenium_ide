@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testdata>
+    <vars store="link=New Zealand" currency='label=$HKD' firstname='PhilTest' lastname='KMDTEST' telephone='033736110' email='kmdtesterphil+seleniumIdeUSAOrderTest@gmail.com' password='kmd12345' street1='137 W North Bend Way' street2='' suburb='NORTH BEND' postcode='98045' city='Washington' country='label=United States' region='label=Washington' productFile='NZ_SKUs.xml' shippingMethod=''/>
+   
+
+    <!--
+    	here is a example to make a proper product data to test 
+    <vars store="link=Australia" currency='label=$£GBP' firstname='PhilTest' lastname='KMDTEST' telephone='0733590877' email='kmdtesterphil+seleniumIdeTest@gmail.com' password='kmd12345' street1='13 Manor Place' street2='' suburb='Chremside' postcode='4032' city='Brisbane' country='label=Australia' region='label=Queensland' productFile='Product_11481002.xml'/>
+    <vars store="link=United Kingdom" currency='label=$HKD' firstname='PhilTest' lastname='KMDTEST' telephone='0733590877' email='kmdtesterphil+seleniumIdeTest@gmail.com' password='kmd12345' street1='13 Manor Place' street2='' suburb='Chremside' postcode='4032' city='Brisbane' country='label=United Kingdom' region='label=Queensland' productFile='Products.xml'/>
+
+    <vars sku='12476902' size='label=10' quantity='10'/>
+    currency="label=¥CNY" label=¥JPY label=$HKD label=£GBP
+    	-->
+</testdata>

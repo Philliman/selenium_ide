@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://crmtest.kathmandu.com/" />
+<title>OpenRecord_CRM</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">OpenRecord_CRM</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>http://crmdev.kathmandu.com/KathmanduDEV/</td>
+	<td>CRM_Window</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>10SP007554</td>
+	<td>SCM</td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=nav_conts</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=nav_conts</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//input[@id='crmGrid_findCriteria']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//input[@id='crmGrid_findCriteria']</td>
+	<td>${SCM}</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>5000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//input[@id='crmGrid_findCriteria']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>keyPress</td>
+	<td>//input[@id='crmGrid_findCriteria']</td>
+	<td>\13</td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>css=nobr.gridcellpadding</td>
+	<td>${SCM}</td>
+</tr>
+<tr>
+	<td>storeText</td>
+	<td>xpath=html/body/div[1]/div[4]/div/div/div[1]/div[2]/div/div[2]/div/div[1]/div/div[1]/div[2]/div[2]/div/div/div/div[1]/table/tbody/tr/td[4]/nobr</td>
+	<td>lastname</td>
+</tr>
+<tr>
+	<td>storeText</td>
+	<td>xpath=html/body/div[1]/div[4]/div/div/div[1]/div[2]/div/div[2]/div/div[1]/div/div[1]/div[2]/div[2]/div/div/div/div[1]/table/tbody/tr/td[3]/nobr</td>
+	<td>firstname</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Contact: ${firstname} ${lastname} - Microsoft Dynamics CRM</td>
+	<td>title</td>
+</tr>
+<tr>
+	<td>doubleClick</td>
+	<td>//table[@id='gridBodyTable']/tbody/tr/td[5]/nobr</td>
+	<td></td>
+</tr>
+
+</tbody></table>
+</body>
+</html>

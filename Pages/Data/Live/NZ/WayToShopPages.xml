@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testdata>
+    <vars locator="css=a.logo &gt; img[alt=&quot;Kathmandu&quot;]" title="Kathmandu | Shop Outdoor Clothing, Camping &amp; Travel Gear NZ"/>
+    <vars locator="link=Online" title="Online"/>
+    <vars locator="//div[@id='content']/div/div/div/ul/li[5]/ul/li[2]/a/span" title="Find a Store"/>
+    <vars locator="link=Mail Order" title="Mail Order"/>
+    <vars locator="//div[@id='content']/div/div/div/ul/li[5]/ul/li[4]/a/span" title="eVoucher Gift Cards"/>
+    <vars locator="//div[@id='content']/div/div/div/ul/li[5]/ul/li[5]/a/span" title="Gift Cards"/>
+    <vars locator="//div[@id='content']/div/div/div/ul/li[5]/ul/li[6]/a/span" title="Corporate and Group Sales"/>
+    <vars locator="link=Catalogue" title="Catalogue"/>
+    <vars locator="css=a[title=&quot;How to Shop In Store&quot;]" title="Find a Store"/>
+    <vars locator="css=a[title=&quot;How to Shop by Mail Order&quot;]" title="Mail Order"/>
+    <vars locator="css=a[title=&quot;How to Shop with eVoucher Gift Cards&quot;]" title="eVoucher Gift Cards"/>
+    <vars locator="css=a[title=&quot;How to Shop with Gift Cards&quot;]" title="Gift Cards"/>
+    <vars locator="link=Corporate &amp; Group Sales" title="Corporate and Group Sales"/>
+    <vars locator="link=Catalogues &amp; Brochures" title="Catalogue"/>
+    <vars locator="link=Online" title="Online"/>
+</testdata>

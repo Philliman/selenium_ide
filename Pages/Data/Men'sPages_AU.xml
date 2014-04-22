@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testdata>
+    <vars locator="css=a.level-top > span" title="Men's Outdoor Clothing Gear | Tops Jackets Footwear | Kathmandu AU"/>
+    <vars locator="link=Tops" title="Men's Tops | Hoodies Pullovers Outdoor Shirts T-Shirts | Kathmandu AU"/>
+    <vars locator="xpath=(//a[contains(text(),'Jackets')])[5]" title="Men's Outdoor Jackets | Rain Fleece Down GORE-TEX® | Kathmandu AU"/>
+    <vars locator="xpath=(//a[contains(text(),'Base Layers')])[5]" title="Men's Thermals | Thermals Merino Quick Dry Outdoor | Kathmandu AU"/>
+    <vars locator="xpath=(//a[contains(text(),'Trousers')])[5]" title="Men's Trousers | Outdoor Hiking Trousers Shorts | Kathmandu AU"/>
+    <vars locator="xpath=(//a[contains(text(),'Footwear')])[7]" title="Men's Outdoor Footwear | Hiking Boots Shoes Socks | Kathmandu AU"/>
+    <vars locator="xpath=(//a[contains(text(),'Accessories')])[10]" title="Men's Accessories | Gloves Hats Scarves Outdoor Gear | Kathmandu AU"/>
+</testdata>
+

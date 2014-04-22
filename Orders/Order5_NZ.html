@@ -1,0 +1,431 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://mobile.kmdadmin.tundra.com.au/admin" />
+<title>Order5_NZ</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Order5_NZ</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/index.php/admin/dashboard/index/key/922ce4adb2256a201361fc658cd823c876062cde6745dc7b82bdb6a3f043a76a/</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//ul[@id='nav']/li[2]/ul/li/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//button[@title='Create New Order']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=sales_order_create_customer_grid_filter_firstname</td>
+	<td>Test</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=sales_order_create_customer_grid_filter_lastname</td>
+	<td>Four</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=sales_order_create_customer_grid_filter_summit_club_id</td>
+	<td>10SPTEst4</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//button[@title='Search']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//tr[@class='even pointer']/td[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//tr[@id='row_1153525']/td[5]</td>
+	<td>10SPTEST4</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//tr[@id='row_1153525']/td[5]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=store_1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForVisible</td>
+	<td>//*[@id='order-items']/div/div[1]/div/button[1]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//*[@id='order-items']/div/div[1]/div/button[1]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForVisible</td>
+	<td>//button[@onclick='addBySku.add()'][@title='']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>500</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//button[@onclick='addBySku.add()'][@title='']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=sku_qty_1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//button[@onclick='addBySku.add()'][@title='']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=sku_qty_2</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//button[@onclick='addBySku.add()'][@title='']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=sku_qty_3</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//button[@onclick='addBySku.add()'][@title='']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=sku_qty_4</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//button[@onclick='addBySku.add()'][@title='']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=sku_qty_5</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//button[@onclick='addBySku.add()'][@title='']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=sku_qty_6</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//button[@onclick='addBySku.add()'][@title='']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=sku_qty_7</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//button[@onclick='addBySku.add()'][@title='']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=sku_qty_8</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//button[@onclick='addBySku.add()'][@title='']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=sku_qty_9</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//button[@onclick='addBySku.add()'][@title='']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=sku_qty_10</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//button[@onclick='addBySku.add()'][@title='']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=sku_qty_11</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//button[@onclick='addBySku.add()'][@title='']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=sku_qty_12</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=sku_qty_0</td>
+	<td>1</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=sku_qty_1</td>
+	<td>1</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=sku_qty_2</td>
+	<td>1</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=sku_qty_3</td>
+	<td>1</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=sku_qty_4</td>
+	<td>1</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=sku_qty_5</td>
+	<td>1</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=sku_qty_6</td>
+	<td>1</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=sku_qty_7</td>
+	<td>1</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=sku_qty_8</td>
+	<td>1</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=sku_qty_9</td>
+	<td>1</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=sku_qty_10</td>
+	<td>1</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=sku_qty_11</td>
+	<td>1</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=sku_qty_12</td>
+	<td>1</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=sku_0</td>
+	<td>90179/000/0</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=sku_1</td>
+	<td>13036/902/10</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=sku_2</td>
+	<td>13036/902/12</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=sku_3</td>
+	<td>13037/902/L</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=sku_4</td>
+	<td>13037/902/M</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=sku_5</td>
+	<td>13039/917/L</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=sku_6</td>
+	<td>13039/917/M</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=sku_7</td>
+	<td>61251/946/L</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=sku_8</td>
+	<td>61251/946/S</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=sku_9</td>
+	<td>13047/891/L</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=sku_10</td>
+	<td>61349/015/M</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=sku_11</td>
+	<td>13101/902/10</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=sku_12</td>
+	<td>61210/602/ONE</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//button[@title='Add to Order']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>css=td.a-left</td>
+	<td>Total 13 product(s)</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=p_method_cybersource</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=dt &gt; label</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=cybersource_cc_type</td>
+	<td>label=Visa</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=cybersource_cc_number</td>
+	<td>4111111111111111</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=cybersource_expiration</td>
+	<td>label=01 - January</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=cybersource_expiration_yr</td>
+	<td>label=2015</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=cybersource_cc_cid</td>
+	<td>123</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td></td>
+	<td>1000</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Get shipping methods and rates</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=s_method_temando_free_2</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=s_method_temando_free_2</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=li &gt; label.normal</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//button[@title='Submit Order']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//ul[@id='nav']/li[2]/ul/li/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTitle</td>
+	<td>Orders / Sales / Magento Admin</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testdata>
+    <vars locator="css=a.logo &gt; img[alt=&quot;Kathmandu&quot;]" title="Kathmandu | Shop Outdoor Clothing, Camping &amp; Travel Gear NZ"/>
+    <vars locator="link=Videos" title="Videos"/>
+    <vars locator="css=ul.level-1 &gt; li &gt; a &gt; span" title="Product Videos"/>
+    <vars locator="//div[@id='content']/div/div/div/ul/li[3]/ul/li/ul/li[2]/a/span" title="Destination Videos"/>
+    <vars locator="//div[@id='content']/div/div/div/ul/li[3]/ul/li[2]/a/span" title="Gear Lists"/>
+    <vars locator="css=ul.level-1 &gt; li.parent &gt; ul.level-1 &gt; li &gt; a &gt; span" title="Camping Checklist"/>
+    <vars locator="link=Hiking Gear List" title="Hiking Gear List"/>
+    <vars locator="//div[@id='content']/div/div/div/ul/li[3]/ul/li[2]/ul/li[3]/a/span" title="Cycling Gear List"/>
+    <vars locator="//div[@id='content']/div/div/div/ul/li[3]/ul/li[2]/ul/li[4]/a/span" title="Day Walking Gear List"/>
+    <vars locator="//div[@id='content']/div/div/div/ul/li[3]/ul/li[2]/ul/li[5]/a/span" title="Outdoor Check List"/>
+    <vars locator="link=Travel Packing Checklist" title="Travel Packing Checklist"/>
+    <vars locator="//div[@id='content']/div/div/div/ul/li[3]/ul/li[2]/ul/li[7]/a/span" title="Business Travel Gear List"/>
+    <vars locator="link=Duke of Edinburgh Gear List" title="Duke of Edinburgh Gear List"/>
+    <vars locator="//div[@id='content']/div/div/div/ul/li[3]/ul/li[2]/ul/li[9]/a/span" title="Emergency Check List"/>
+    <vars locator="//div[@id='content']/div/div/div/ul/li[3]/ul/li[3]/a/span" title="Care Instructions"/>
+    <vars locator="css=ul.level-1 &gt; li.parent &gt; ul.level-1 &gt; li &gt; a &gt; span" title="Down Jacket Care Advice"/>
+    <vars locator="//div[@id='content']/div/div/div/ul/li[3]/ul/li[3]/ul/li[2]/a/span" title="Down Sleeping Bag Care"/>
+    <vars locator="//div[@id='content']/div/div/div/ul/li[3]/ul/li[3]/ul/li[3]/a/span" title="Synthetic Sleeping Bag Care"/>
+    <vars locator="//div[@id='content']/div/div/div/ul/li[3]/ul/li[3]/ul/li[4]/a/span" title="Durable Water Repellent (DWR) Care"/>
+    <vars locator="//div[@id='content']/div/div/div/ul/li[3]/ul/li[3]/ul/li[5]/a/span" title="GORE-TEX® Footwear Care"/>
+    <vars locator="//div[@id='content']/div/div/div/ul/li[3]/ul/li[3]/ul/li[6]/a/span" title="GORE-TEX® Glove Care"/>
+    <vars locator="//div[@id='content']/div/div/div/ul/li[3]/ul/li[3]/ul/li[7]/a/span" title="GORE-TEX® Outerwear Care"/>
+    <vars locator="//div[@id='content']/div/div/div/ul/li[3]/ul/li[3]/ul/li[8]/a/span" title="Merino Mid-Lite Care"/>
+    <vars locator="link=Sock Care" title="Sock Care"/>
+    <vars locator="//div[@id='content']/div/div/div/ul/li[3]/ul/li[4]/a/span" title="Tent Pitching Instructions"/>
+    <vars locator="//div[@id='content']/div/div/div/ul/li[3]/ul/li[5]/a/span" title="Tech Sheets"/>
+    <vars locator="//div[@id='content']/div/div/div/ul/li[3]/ul/li[6]/a/span" title="Size Guides"/>
+    <vars locator="css=ul.level-1 &gt; li.parent &gt; ul.level-1 &gt; li &gt; a &gt; span" title="How To Measure"/>
+    <vars locator="link=Kids Pack Fitting Tips" title="Kids Pack Fitting Tips"/>
+    <vars locator="//div[@id='content']/div/div/div/ul/li[3]/ul/li[7]/a/span" title="Expert Advice Articles"/>
+    <vars locator="css=ul.level-1 &gt; li.parent &gt; ul.level-1 &gt; li &gt; a &gt; span" title="Travel Inspiration | Kathmandu"/>
+    <vars locator="//div[@id='content']/div/div/div/ul/li[3]/ul/li[7]/ul/li[2]/a/span" title="Our Favourite Campgrounds in New Zealand"/>
+    <vars locator="link=Our Favourite Hiking Tracks in New Zealand" title="Our Favourite Hiking Tracks in New Zealand"/>
+    <vars locator="//div[@id='content']/div/div/div/ul/li[3]/ul/li[7]/ul/li[4]/a/span" title="Our Top Ten Bike Tracks in New Zealand"/>
+    <vars locator="//div[@id='content']/div/div/div/ul/li[3]/ul/li[7]/ul/li[5]/a/span" title="Commuting by Bike"/>
+    <vars locator="//div[@id='content']/div/div/div/ul/li[3]/ul/li[7]/ul/li[6]/a/span" title="Kids Pack Fitting Tips"/>
+    <vars locator="//div[@id='content']/div/div/div/ul/li[3]/ul/li[7]/ul/li[7]/a/span" title="Tips for Travelling with Kids"/>
+    <vars locator="//div[@id='content']/div/div/div/ul/li[3]/ul/li[7]/ul/li[8]/a/span" title="Tips for Light Travelling"/>
+    <vars locator="//div[@id='content']/div/div/div/ul/li[3]/ul/li[7]/ul/li[9]/a/span" title="Top 5 Intrepid Adventures"/>
+    <vars locator="//div[@id='content']/div/div/div/ul/li[3]/ul/li[7]/ul/li[10]/a/span" title="Tips and Tricks for a Day on the Snow"/>
+    <vars locator="//div[@id='content']/div/div/div/ul/li[3]/ul/li[7]/ul/li[11]/a/span" title="Tips and Tricks for Fun in the Sun"/>
+    <vars locator="link=Running Tips and Tricks" title="Running Tips and Tricks"/>
+    <vars locator="//div[@id='content']/div/div/div/ul/li[3]/ul/li[7]/ul/li[13]/a/span" title="Hydration Tips and Tricks"/>
+    <vars locator="//div[@id='content']/div/div/div/ul/li[3]/ul/li[7]/ul/li[14]/a/span" title="Favourite Running Trails"/>
+    <vars locator="//div[@id='content']/div/div/div/ul/li[3]/ul/li[7]/ul/li[15]/a/span" title="Best Hiking Trails in the World"/>
+    <vars locator="//div[@id='content']/div/div/div/ul/li[3]/ul/li[7]/ul/li[16]/a/span" title="Favourite Travel Destinations"/>
+    <vars locator="//div[@id='content']/div/div/div/ul/li[3]/ul/li[7]/ul/li[17]/a/span" title="Favourite Kiwi Beaches"/>
+    <vars locator="link=Favourite Kiwi Ski Fields" title="Favourite Kiwi Ski Fields"/>
+    <vars locator="link=Camping Tips" title="Camping Tips"/>
+    <vars locator="//div[@id='content']/div/div/div/ul/li[3]/ul/li[7]/ul/li[20]/a/span" title="Layering"/>
+    <vars locator="//div[@id='content']/div/div/div/ul/li[3]/ul/li[8]/a/span" title="Best in Field"/>
+    <vars locator="css=ul.level-1 &gt; li.parent &gt; ul.level-1 &gt; li &gt; a &gt; span" title="Meet The Team"/>
+</testdata>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testdata>
+    <vars locator="css=a.logo &gt; img[alt=&quot;Kathmandu&quot;]" title="Kathmandu | Shop Outdoor Clothing, Camping &amp; Travel Gear NZ"/>
+    <vars locator="//ul[@id='nav']/li[7]/a/span" title="Outdoor Footwear | Tramping Hiking Boots Shoes Socks | Kathmandu NZ"/>
+    <vars locator="xpath=(//a[contains(text(),&quot;Men's&quot;)])[2]" title="Footwear for Men | Hiking Boots Shoes Sandals Socks | Kathmandu NZ"/>
+    <vars locator="xpath=(//a[contains(text(),&quot;Women's&quot;)])[2]" title="Ladies Footwear | Hiking Boots Shoes Sandals Socks | Kathmandu NZ"/>
+    <vars locator="xpath=(//a[contains(text(),'Kids')])[2]" title="Kids Footwear | Hiking Boots Shoes Sandals Socks | Kathmandu NZ"/>
+    <vars locator="//a[contains(text(),'Socks')]" title="Outdoor Socks | Merino Thermal Trail Hiking Sock | Kathmandu NZ"/>
+    <vars locator="xpath=(//a[contains(text(),'Accessories')])[10]" title="Shoe Accessories | Boot Laces Leather Protector | Kathmandu NZ"/>
+    <vars locator="xpath=(//a[contains(text(),'Kathmandu')])[2]" title="Kathmandu | Boots Shoes Hiking Tramping Sandals | Kathmandu NZ"/>
+    <vars locator="xpath=(//a[contains(text(),'Keen')])[2]" title="Keen | Keen Hiking Boots Shoes Sandals Footwear | Kathmandu NZ"/>
+    <vars locator="xpath=(//a[contains(text(),'Oboz')])[2]" title="OBOZ® | OBOZ® Hiking Boots Shoes Footwear | Kathmandu NZ"/>
+    <vars locator="xpath=(//a[contains(text(),'Salomon')])[2]" title="Salomon® | Salomon® Hiking Boots Shoes Footwear | Kathmandu NZ"/>
+    <vars locator="xpath=(//a[contains(text(),'Teva')])[2]" title="Teva® | Teva® Hiking Boots Shoes Sandals TevaSphere | Kathmandu NZ"/>
+</testdata>

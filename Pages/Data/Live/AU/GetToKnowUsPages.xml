@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testdata>
+    <vars locator="css=a.logo &gt; img[alt=&quot;Kathmandu&quot;]" title="Kathmandu | Shop Outdoor Clothing, Camping &amp; Travel Gear Australia"/>
+    <vars locator="link=Our Story" title="Our Story"/>
+    <vars locator="css=a[title=&quot;Design &amp; Technology&quot;]" title="Design &amp; Technology"/>
+    <vars locator="css=a[title=&quot;Sustainability&quot;]" title="Sustainability"/>
+    <vars locator="css=a[title=&quot;Community&quot;]" title="Community"/>
+    <vars locator="css=a[title=&quot;Careers&quot;]" title="Careers"/>
+    <vars locator="css=a[title=&quot;Company News&quot;]" title="Company News"/>
+    <vars locator="css=ul.level-0.cms-menu &gt; li.parent &gt; a &gt; span" title="Our Story"/>
+    <vars locator="css=ul.level-1 &gt; li &gt; a &gt; span" title="How It All Began"/>
+    <vars locator="//div[@id='content']/div/div/div/ul/li[2]/ul/li[2]/a/span" title="Design &amp; Technology"/>
+    <vars locator="css=ul.level-1 &gt; li.parent &gt; ul.level-1 &gt; li &gt; a &gt; span" title="Ideas &amp; Solutions"/>
+    <vars locator="//div[@id='content']/div/div/div/ul/li[2]/ul/li[3]/a/span" title="Sustainability"/>
+    <vars locator="link=Minimising Our Environmental Footprint" title="Minimising Our Environmental Footprint"/>
+    <vars locator="//div[@id='content']/div/div/div/ul/li[2]/ul/li[3]/ul/li[2]/a/span" title="Respecting Human Rights"/>
+    <vars locator="//div[@id='content']/div/div/div/ul/li[2]/ul/li[3]/ul/li[3]/a/span" title="Developing Our Team"/>
+    <vars locator="//div[@id='content']/div/div/div/ul/li[2]/ul/li[4]/a/span" title="Community"/>
+    <vars locator="css=ul.level-1 &gt; li.parent &gt; ul.level-1 &gt; li &gt; a &gt; span" title="Kathmandu Community"/>
+    <vars locator="//div[@id='content']/div/div/div/ul/li[2]/ul/li[4]/ul/li[2]/a/span" title="Kathmandu Adventure Series"/>
+    <vars locator="//div[@id='content']/div/div/div/ul/li[2]/ul/li[4]/ul/li[3]/a/span" title="Australian Himalayan Foundation"/>
+    <vars locator="//div[@id='content']/div/div/div/ul/li[2]/ul/li[4]/ul/li[4]/a/span" title="Australian Red Cross"/>
+    <vars locator="//div[@id='content']/div/div/div/ul/li[2]/ul/li[4]/ul/li[5]/a/span" title="Australian Wildlife Conservancy"/>
+    <vars locator="//div[@id='content']/div/div/div/ul/li[2]/ul/li[5]/a/span" title="Careers"/>
+    <vars locator="css=ul.level-1 &gt; li.parent &gt; ul.level-1 &gt; li &gt; a &gt; span" title="Why Work for Kathmandu"/>
+    <vars locator="//div[@id='content']/div/div/div/ul/li[2]/ul/li[5]/ul/li[2]/a/span" title="Values That Drive Us"/>
+    <vars locator="//div[@id='content']/div/div/div/ul/li[2]/ul/li[5]/ul/li[3]/a/span" title="Employee Stories"/>
+    <vars locator="//div[@id='content']/div/div/div/ul/li[2]/ul/li[5]/ul/li[4]/a/span" title="Current Vacancies"/>
+    <vars locator="//div[@id='content']/div/div/div/ul/li[2]/ul/li[5]/ul/li[5]/a/span" title="Recruitment Process"/>
+    <vars locator="//div[@id='content']/div/div/div/ul/li[2]/ul/li[5]/ul/li[6]/a/span" title="Careers Frequently Asked Questions"/>
+    <vars locator="//div[@id='content']/div/div/div/ul/li[2]/ul/li[6]/a/span" title="Company News"/>
+    <vars locator="css=ul.level-1 &gt; li.parent &gt; ul.level-1 &gt; li &gt; a &gt; span" title="Kathmandu Company News"/>
+    <vars locator="//div[@id='content']/div/div/div/ul/li[2]/ul/li[6]/ul/li[2]/a/span" title="For People Who Want Out | Kathmandu"/>
+    <vars locator="//div[@id='content']/div/div/div/ul/li[2]/ul/li[6]/ul/li[3]/a/span" title="Kathmandu Makes Dreams Come True for New Zealand Adventurers"/>
+    <vars locator="//div[@id='content']/div/div/div/ul/li[2]/ul/li[6]/ul/li[4]/a/span" title="Kathmandu Support for Marlborough Sounds' Conservation Programmes"/>
+    <vars locator="//div[@id='content']/div/div/div/ul/li[2]/ul/li[6]/ul/li[5]/a/span" title="James Strong Memorial Project"/>
+    <vars locator="//div[@id='content']/div/div/div/ul/li[2]/ul/li[6]/ul/li[6]/a/span" title="Peter Halkett Extended Leave"/>
+    <vars locator="//div[@id='content']/div/div/div/ul/li[2]/ul/li[6]/ul/li[7]/a/span" title="Kathmandu Supports Tasmanian Bushfire Victims"/>
+    <vars locator="//div[@id='content']/div/div/div/ul/li[2]/ul/li[6]/ul/li[8]/a/span" title="Outward Bound Scholarships | Kathmandu | Live the Dream"/>
+    <vars locator="//div[@id='content']/div/div/div/ul/li[2]/ul/li[6]/ul/li[9]/a/span" title="Kathmandu Opens New Distribution Centre for New Zealand"/>
+    <vars locator="//div[@id='content']/div/div/div/ul/li[2]/ul/li[6]/ul/li[10]/a/span" title="New Kathmandu Store in Premiere NZ Retail Precinct"/>
+    <vars locator="link=Kathmandu Opens in Tamworth" title="Kathmandu Opens in Tamworth"/>
+</testdata>

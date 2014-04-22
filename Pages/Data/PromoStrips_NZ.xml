@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testdata>
+    <vars verifyLocator='css=img[alt="Free Shipping Offer | Kathmandu"]' position='472'/>
+	<vars verifyLocator='css=img[alt="International Shipping | Kathmandu"]' position='794'/>
+	<vars verifyLocator='css=img[alt="Join Summit Club | Kathmadnu"]' position='1116'/>
+</testdata>

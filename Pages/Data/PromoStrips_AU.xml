@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testdata>
+    <vars verifyLocator='css=img[alt="Free Shipping AU"]' position='583'/>
+	<vars verifyLocator='css=img[alt="International Shipping ANZ"]' position='905'/>
+	<vars verifyLocator='css=img[alt="Christmas Gift Ideas"]' position='1227'/>
+</testdata>

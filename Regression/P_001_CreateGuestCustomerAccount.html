@@ -1,0 +1,476 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://uk.kmdtest.tundra.com.au/" />
+<title>P_001_CreateGuestCustomerAccount</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">P_001_CreateGuestCustomerAccount</td></tr>
+</thead><tbody>
+<tr>
+	<td>store</td>
+	<td>http://nz.master.kathmandu.co.nz</td>
+	<td>baseURL</td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>${baseURL}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>file:///C:/Users/philch/Desktop/selenium_IDE/Regression/Data/</td>
+	<td>basePath</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>International&amp;Domesticshipppingtests</td>
+	<td>testName</td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>javascript{storedVars['i']=0}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>forXml</td>
+	<td>${basePath}P_001_Customers.xml</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>javascript{storedVars['i']+=1}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>convertCountryFormat</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>if</td>
+	<td>javascript{storedVars['currentStore']!=storedVars['store']}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>currentStore=${currentStore}&nbsp;&nbsp;</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>${store}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>endIf</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>call</td>
+	<td>delectAllItemsInCart</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeText</td>
+	<td>//span[@class='currency-code']</td>
+	<td>oldCurrency</td>
+</tr>
+<tr>
+	<td>if</td>
+	<td>javascript{storedVars['currency'].slice(7,11)!=storedVars['oldCurrency']}</td>
+	<td>newCurrency</td>
+</tr>
+<tr>
+	<td>selectAndWait</td>
+	<td>css=select</td>
+	<td>${currency}</td>
+</tr>
+<tr>
+	<td>endIf</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>forXml</td>
+	<td>${basePath}${productFile}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=q</td>
+	<td>${sku}</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>xpath=(//button[@type='submit'])[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=h3.grey &gt; strong</td>
+	<td>'${sku}'</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>xpath=html/body/div[1]/div/div[3]/div/div/div[2]/div/div/div[3]/ul/li/div/a[1]/img</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>size = ${size}, quantity = ${quantity}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>if</td>
+	<td>javascript{storedVars['size']!=''}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=size</td>
+	<td>${size}</td>
+</tr>
+<tr>
+	<td>endIf</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>if</td>
+	<td>javascript{storedVars['quantity']!=''}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//input[@title='Qty']</td>
+	<td>${quantity}</td>
+</tr>
+<tr>
+	<td>endIf</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//button[@title='Add to Cart']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//button[@title='Add to Cart']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForVisible</td>
+	<td>css=div.cart-item-column</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForNotVisible</td>
+	<td>css=div.cart-item-column</td>
+	<td></td>
+</tr>
+<tr>
+	<td>endForXml</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>xpath=html/body/div[1]/div/div[1]/div[1]/div[1]/div/div[1]/a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>fillCheckOutForm</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>10000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>payByCrediCard</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//button[@title='Place Order']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>xpath=html/body/div[1]/div/div[2]/div/div[2]/div[1]/h2/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeText</td>
+	<td>xpath=html/body/div[1]/div/div[2]/div/div[2]/div[1]/h2/span</td>
+	<td>createdOrder</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>createdOrder${i} = ${createdOrder}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=logout-link</td>
+	<td>Log Out</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>xpath=html/body/div[1]/div/div[1]/div[1]/div[1]/div/div[2]/ul/li[3]/span/a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTitle</td>
+	<td>My Account</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Account Information</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTitle</td>
+	<td>Account Information</td>
+	<td></td>
+</tr>
+<tr>
+	<td>call</td>
+	<td>VerifyDetailsOnInfoPage</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=logout-link</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTitle</td>
+	<td>Create New Customer Account</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=email</td>
+	<td>${email}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=pass</td>
+	<td>${password}</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>xpath=(//button[@type='submit'])[5]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTitle</td>
+	<td>Account Information</td>
+	<td></td>
+</tr>
+<tr>
+	<td>call</td>
+	<td>VerifyDetailsOnInfoPage</td>
+	<td></td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>${baseURL}/admin</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeElementPresent</td>
+	<td>id=firstname</td>
+	<td>loginPresent</td>
+</tr>
+<tr>
+	<td>if</td>
+	<td>loginPresent</td>
+	<td></td>
+</tr>
+<tr>
+	<td>adminLoginAndWait</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>endIf</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//ul[@id='nav']/li[6]/ul/li/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTitle</td>
+	<td>Manage Customers / Customers / Magento Admin</td>
+	<td></td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>kmdtesterphil+AU_P001@gmail.com</td>
+	<td>email</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=customerGrid_filter_email</td>
+	<td>${email}</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//button[@title='Search']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>500</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextAndClickAndWait</td>
+	<td>xpath=html/body/div[1]/div[2]/div/div[3]/div/div/div/table/tbody/tr[1]/td[4]</td>
+	<td>${email}</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=#customer_info_tabs_account &gt; span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//button[@title='Delete Customer']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertConfirmation</td>
+	<td>Are you sure you want to do this?</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=li &gt; span</td>
+	<td>The customer has been deleted.</td>
+</tr>
+<tr>
+	<td>endForXml</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>function</td>
+	<td>delectAllItemsInCart</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForVisible</td>
+	<td>//span[@class='price']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeText</td>
+	<td>//span[@class='price']</td>
+	<td>myCartPrice</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>price = ${myCartPrice}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>while</td>
+	<td>javascript{storedVars['myCartPrice']!='0.00'}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>label</td>
+	<td>checkMyCartPrice</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=span.cart-total</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Remove item</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForVisible</td>
+	<td>//span[@class='price']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeText</td>
+	<td>//span[@class='price']</td>
+	<td>myCartPrice</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>price = ${myCartPrice}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>endWhile</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>endFunction</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>function</td>
+	<td>VerifyDetailsOnInfoPage</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=firstname</td>
+	<td>${firstname}</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=lastname</td>
+	<td>${lastname}</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=email</td>
+	<td>${email}</td>
+</tr>
+<tr>
+	<td>verifyValue</td>
+	<td>id=telephone</td>
+	<td>${telephone}</td>
+</tr>
+<tr>
+	<td>endFunction</td>
+	<td></td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

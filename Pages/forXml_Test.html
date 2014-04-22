@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://nz.kmdproduction.tundra.com.au/" />
+<title>forXml_Test</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">forXml_Test</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>#### store variables, change the contains if need####</td>
+	<td></td>
+</tr>
+<tr>
+	<td>getEval</td>
+	<td>storedVars['i']=0;</td>
+	<td></td>
+</tr>
+<tr>
+	<td>forXml</td>
+	<td>file://C:\Users\philch\Desktop\selenium_IDE\WholePages\itemToTest.xml</td>
+	<td></td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>javascript{storedVars['i']+=1}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>javascript{'element'+storedVars['i']}</td>
+	<td>element</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>javascript{'position'+storedVars['i']}</td>
+	<td>position</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${element}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>${locator}</td>
+	<td>${element}</td>
+</tr>
+<tr>
+	<td>storeElementPositionLeft</td>
+	<td>${locator}</td>
+	<td>${position}</td>
+</tr>
+<tr>
+	<td>endForXml</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>position1 = getEval{storedVars['position']}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>position2 = ${position2}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>position1 = ${position1}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>position3 = ${position3}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>positon = ${&quot;javascript{storedVars['i']+=1}&quot;}</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testdata>
+    <vars locator='css=a.level-top > span' title="Men's Outdoor Clothing Gear | Tops Jackets Footwear | Kathmandu NZ"/>
+    <vars locator="//ul[@id='nav']/li[2]/a/span" title="Women's Outdoor Gear Clothing | Tops Jackets Footwear | Kathmandu NZ"/>
+    <vars locator="//ul[@id='nav']/li[3]/a/span" title="Kids"/>
+    <vars locator="//ul[@id='nav']/li[4]/a/span" title="Backpacks &amp; Bags | Backpacks Luggage Hiking Packs | Kathmandu NZ"/>
+    <vars locator='link=Camping' title="Camping Gear Online | Tents Sleeping Bags Equipment | Kathmandu NZ"/>
+    <vars locator="//ul[@id='nav']/li[6]/a/span" title="Sleeping Gear | Sleeping Bags Mats Liners Pillows | Kathmandu NZ"/>
+    <vars locator="//ul[@id='nav']/li[7]/a/span" title="Outdoor Footwear | Tramping Hiking Boots Shoes Socks | Kathmandu NZ"/>
+    <vars locator="//ul[@id='nav']/li[8]/a/span" title="Outdoor Accessories | Adaptors Bottles Cells &amp; More | Kathmandu NZ"/>
+    <vars locator='css=li.summit-club.parent > a.level-top > span' title="Summit Club"/>
+    <vars locator="//ul[@id='nav']/li[10]/a/span" title="Outlet"/>
+    <vars locator="//div[@id='summit-club']/a/span" title="Summit Club"/>
+    <vars locator='css=div.offer-container > a > img' title="Summit Club Membership"/>
+    <vars locator='css=a[title="Contact Kathmandu"]' title="Contact Us"/>
+    <vars locator='css=a[title="Kathmandu Store Locator"]' title="Kathmandu"/>
+    <vars locator='link=FAQs' title="Frequently Asked Questions"/>
+    <vars locator='link=Delivery &amp; Shipping' title="Delivery and Shipping"/>
+    <vars locator='link=Returns &amp; Exchanges' title="Returns and Exchanges"/>
+    <vars locator='css=a[title="About My Account"]' title="About My Account"/>
+    <vars locator='css=a[title="Product Safety Information"]' title="Product Safety"/>
+    <vars locator='link=Online' title="Online"/>
+    <vars locator='css=a[title="How to Shop In Store"]' title="Stores"/>
+    <vars locator='css=a[title="How to Shop by Mail Order"]' title="Mail Order"/>
+    <vars locator="//div[@id='content']/div/div/div/ul/li[5]/ul/li[4]/a/span" title="Mobile"/>
+    <vars locator="//div[@id='content']/div/div/div/ul/li[5]/ul/li[5]/a/span" title="eVoucher Gift Cards"/>
+    <vars locator="//div[@id='content']/div/div/div/ul/li[5]/ul/li[6]/a/span" title="Gift Cards"/>
+    <vars locator="//div[@id='content']/div/div/div/ul/li[5]/ul/li[7]/a/span" title="Corporate and Group Sales"/>
+    <vars locator="//div[@id='content']/div/div/div/ul/li[5]/ul/li[8]/a/span" title="Catalogue"/>
+    <vars locator="xpath=(//a[contains(text(),'Travel')])[2]" title="Travel"/>
+    <vars locator="xpath=(//a[contains(text(),'Camping')])[3]" title="Camping Gear | Tents Equipment Checklists Recipes | Kathmandu.co.nz"/>
+    <vars locator="//a[contains(text(),'Hiking')]" title="Hiking"/>
+    <vars locator="//a[contains(text(),'Cycling')]" title="Cycling"/>
+    <vars locator='link=Running &amp; Fitness' title="Running &amp; Fitness"/>
+    <vars locator='link=Active' title="Active Accessories | Cycling Running Walking Outdoors | Kathmandu NZ"/>
+    <vars locator='link=Snow &amp; Alpine' title="Snow &amp; Alpine"/>
+    <vars locator='link=Water Sports' title="Water Sports"/>
+    <vars locator='link=Videos' title="Videos"/>
+    <vars locator="//a[contains(text(),'Gear Lists')]" title="Gear Lists"/>
+    <vars locator="//a[contains(text(),'Care Instructions')]" title="Care Instructions"/>
+    <vars locator='link=Tent Pitching' title="Tent Pitching Instructions"/>
+    <vars locator='link=Tech Sheets' title="Tech Sheets"/>
+    <vars locator="//div[@id='content']/div/div/div/ul/li[3]/ul/li[6]/a/span" title="Size Guides"/>
+    <vars locator='css=ul.level-1 > li.parent > ul.level-1 > li > a > span' title="How To Measure"/>
+    <vars locator="//div[@id='content']/div/div/div/ul/li[3]/ul/li[6]/ul/li[2]/a/span" title="Kids Pack Fitting Tips"/>
+    <vars locator="//div[@id='content']/div/div/div/ul/li[3]/ul/li[7]/a/span" title="Expert Advice Articles"/>
+    <vars locator="css=span:contains('Our Favourite Campgrounds in')" title="Our Favourite Campgrounds in New Zealand"/>
+    <vars locator="//div[@id='content']/div/div/div/ul/li[3]/ul/li[7]/ul/li[2]/a/span" title="Our Favourite Hiking Tracks in New Zealand"/>
+    <vars locator="//div[@id='content']/div/div/div/ul/li[3]/ul/li[7]/ul/li[3]/a/span" title="Our Top Ten Bike Tracks in New Zealand"/>
+    <vars locator="//div[@id='content']/div/div/div/ul/li[3]/ul/li[7]/ul/li[4]/a/span" title="Commuting by Bike"/>
+    <vars locator="//div[@id='content']/div/div/div/ul/li[3]/ul/li[7]/ul/li[5]/a/span" title="Kids Pack Fitting Tips"/>
+    <vars locator="//div[@id='content']/div/div/div/ul/li[3]/ul/li[7]/ul/li[6]/a/span" title="Tips for Travelling with Kids"/>
+    <vars locator="//div[@id='content']/div/div/div/ul/li[3]/ul/li[7]/ul/li[7]/a/span" title="Tips for Light Travelling"/>
+    <vars locator="//div[@id='content']/div/div/div/ul/li[3]/ul/li[7]/ul/li[8]/a/span" title="Top 5 Intrepid Adventures"/>
+    <vars locator="//div[@id='content']/div/div/div/ul/li[3]/ul/li[7]/ul/li[9]/a/span" title="Tips and Tricks for a Day on the Snow"/>
+    <vars locator='link=Tips and Tricks for Fun in the Sun' title="Tips and Tricks for Fun in the Sun"/>
+    <vars locator="//div[@id='content']/div/div/div/ul/li[3]/ul/li[7]/ul/li[11]/a/span" title="Running Tips and Tricks"/>
+    <vars locator="//div[@id='content']/div/div/div/ul/li[3]/ul/li[7]/ul/li[12]/a/span" title="Hydration Tips and Tricks"/>
+    <vars locator="//div[@id='content']/div/div/div/ul/li[3]/ul/li[7]/ul/li[13]/a/span" title="Favourite Running Trails"/>
+    <vars locator='link=Favourite Alpine Trails' title="Favourite Alpine Trails"/>
+    <vars locator="//div[@id='content']/div/div/div/ul/li[3]/ul/li[7]/ul/li[15]/a/span" title="Favourite Travel Destinations"/>
+    <vars locator="//div[@id='content']/div/div/div/ul/li[3]/ul/li[7]/ul/li[16]/a/span" title="Favourite Kiwi Beaches"/>
+    <vars locator="//div[@id='content']/div/div/div/ul/li[3]/ul/li[7]/ul/li[17]/a/span" title="Favourite Kiwi Ski Fields"/>
+    <vars locator='link=Camping Tips and Tricks' title="Camping Tips and Tricks"/>
+    <vars locator="//div[@id='content']/div/div/div/ul/li[3]/ul/li[7]/ul/li[19]/a/span" title="Layering"/>
+    <vars locator="//div[@id='content']/div/div/div/ul/li[3]/ul/li[8]/a/span" title="Best in Field"/>
+    <vars locator='link=Our Story' title="Our Story"/>
+    <vars locator='css=ul.level-1 > li > a > span' title="How It All Began"/>
+    <vars locator="//div[@id='content']/div/div/div/ul/li[2]/ul/li[2]/a/span" title="Design &amp; Technology"/>
+    <vars locator='css=ul.level-1 > li.parent > ul.level-1 > li > a > span' title="Ideas &amp; Solutions"/>
+    <vars locator="//div[@id='content']/div/div/div/ul/li[2]/ul/li[2]/ul/li[2]/a/span" title="Testing"/>
+    <vars locator="//div[@id='content']/div/div/div/ul/li[2]/ul/li[3]/a/span" title="Sustainability"/>
+    <vars locator='link=Minimising Our Environmental Footprint' title="Minimising Our Environmental Footprint"/>
+    <vars locator="//div[@id='content']/div/div/div/ul/li[2]/ul/li[3]/ul/li[2]/a/span" title="Respecting Human Rights"/>
+    <vars locator='link=Developing Our Team' title="Developing Our Team"/>
+    <vars locator="//div[@id='content']/div/div/div/ul/li[2]/ul/li[5]/a/span" title="Careers"/>
+    <vars locator="//div[@id='content']/div/div/div/ul/li[2]/ul/li[6]/a/span" title="Company News"/>
+    <vars locator='link=Kathmandu Makes Dreams Come True for New Zealand Adventurers' title="Kathmandu Makes Dreams Come True for New Zealand Adventurers"/>
+    <vars locator='css=a.logo > img[alt="Kathmandu"]' title="Kathmandu | Shop Outdoor Clothing, Camping &amp; Travel Gear NZ"/>
+    <vars locator='css=span.price' title="Kathmandu"/>
+    <vars locator='css=span' title="Kathmandu"/>   
+</testdata>

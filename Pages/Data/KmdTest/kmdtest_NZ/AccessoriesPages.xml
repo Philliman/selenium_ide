@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testdata>
+    <vars locator="//ul[@id='nav']/li[8]/a/span" title="Outdoor Accessories | Adaptors Bottles Cells &amp;amp; More | Kathmandu NZ"/>
+    <vars locator="xpath=(//a[contains(text(),'Travel')])[2]" title="Travel Accessories | Microfibre Towels Luggage Locks etc | Kathmandu NZ"/>
+    <vars locator="xpath=(//a[contains(text(),'Active')])[2]" title="Active Accessories | Cycling Running Walking Outdoors | Kathmandu NZ"/>
+    <vars locator="xpath=(//a[contains(text(),'Lighting &amp;amp; Optical')])[2]" title="Lighting &amp;amp; Optical - Accessories"/>
+    <vars locator="xpath=(//a[contains(text(),'Eat &amp;amp; Drink')])[2]" title="Food &amp;amp; Drink | Outdoors Camp Tramping Backpacking | Kathmandu NZ"/>
+    <vars locator="xpath=(//a[contains(text(),'Health')])[2]" title="Travel Health Gear | Survival Kits Accessories Towels | Kathmandu NZ"/>
+    <vars locator="xpath=(//a[contains(text(),'Safe &amp;amp; Secure')])[2]" title="Travel Locks | TSA Locks Combilock Cable Lock | Kathmandu NZ"/>
+    <vars locator="xpath=(//a[contains(text(),'Recreation')])[2]" title="Sport Accessories | Frisbee Yoga Mat Exercise Ball | Kathmandu NZ"/>
+    <vars locator="xpath=(//a[contains(text(),'Other')])[2]" title="Travel Essentials | Umbrellas Clothes Line Hair Dryer | Kathmandu NZ"/>
+</testdata>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testdata>
+    <vars file='AccessoriesPages.xml'/>
+    <vars file='BoysPages.xml'/>
+    <vars file='CampinngPages.xml'/>
+    <vars file='CustomerServicePages.xml'/>
+    <vars file='ExpertAdvicePages.xml'/>
+    <vars file='FootwearPages.xml'/>
+    <vars file='GetToKnowUsPages.xml'/>
+    <vars file='GirlsPages.xml'/>
+    <vars file='MensPages.xml'/>
+    <vars file='OutletPages.xml'/>
+    <vars file='PacksBagsPages.xml'/>
+    <vars file='ShopByActivePages.xml'/>
+    <vars file='SleepingGearPages.xml'/>
+    <vars file='SummitClubPages.xml'/>
+    <vars file='WayToShopPages.xml'/>
+    <vars file='WomensPages.xml'/>
+</testdata>

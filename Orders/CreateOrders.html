@@ -1,0 +1,381 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://au.kmdproduction.tundra.com.au/" />
+<title>CreateOrders</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">CreateOrders</td></tr>
+</thead><tbody>
+<tr>
+	<td>echo</td>
+	<td>this test will create orders on the fronend by a xml file, please modify or create a new xml to create orders, and there has other xml file which will add item to cart by the search box, create new one if required. </td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>change the content of buseURL below to the testing environment. </td>
+	<td></td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>http://nz.kmdtest.tundra.com.au</td>
+	<td>baseURL</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>http://nz.master.kathmandu.co.nz</td>
+	<td>master_baseURL</td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>${master_baseURL}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>file:///C:/Users/philch/Desktop/selenium_IDE/Orders/Data/</td>
+	<td>basePath</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>International&amp;Domesticshipppingtests</td>
+	<td>testName</td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>javascript{storedVars['i']=0}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>forXml</td>
+	<td>${basePath}InternationalShippingOrders.xml</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>javascript{storedVars['i']+=1}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>convertCountryFormat</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>if</td>
+	<td>javascript{storedVars['currentStore']!=storedVars['store']}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>currentStore=${currentStore}&nbsp;&nbsp;</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>${store}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>endIf</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>call</td>
+	<td>delectAllItemsInCart</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeText</td>
+	<td>//span[@class='currency-code']</td>
+	<td>currencyNow</td>
+</tr>
+<tr>
+	<td>if</td>
+	<td>javascript{storedVars['currency'].slice(7,11)!=storedVars['currencyNow']}</td>
+	<td>newCurrency</td>
+</tr>
+<tr>
+	<td>selectAndWait</td>
+	<td>css=select</td>
+	<td>${currency}</td>
+</tr>
+<tr>
+	<td>endIf</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>if</td>
+	<td>javascript{storedVars['SCM']!=''}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Login</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=summit-email</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=summit-email</td>
+	<td>${SCM}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=summit-pass</td>
+	<td>${password}</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>xpath=(//button[@type='submit'])[4]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>endIf</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>forXml</td>
+	<td>${basePath}${productFile}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>if</td>
+	<td>javascript{storedVars['sku']=='evoucher'}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=eVoucher Gift Cards</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTitle</td>
+	<td>eVoucher Gift Cards</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=img[alt=&quot;eVoucher Gift Card&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTitle</td>
+	<td>Kathmandu eVoucher</td>
+	<td></td>
+</tr>
+<tr>
+	<td>enterEvoucherForm</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>else</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=q</td>
+	<td>${sku}</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>xpath=(//button[@type='submit'])[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=h3.grey &gt; strong</td>
+	<td>'${sku}'</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>xpath=html/body/div[1]/div/div[3]/div/div/div[2]/div/div/div[3]/ul/li/div/a[1]/img</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>size = ${size}, quantity = ${quantity}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>if</td>
+	<td>javascript{storedVars['size']!=''}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=size</td>
+	<td>${size}</td>
+</tr>
+<tr>
+	<td>endIf</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>if</td>
+	<td>javascript{storedVars['quantity']!=''}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//input[@title='Qty']</td>
+	<td>${quantity}</td>
+</tr>
+<tr>
+	<td>endIf</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>endIf</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//button[@title='Add to Cart']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//button[@title='Add to Cart']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForVisible</td>
+	<td>css=div.cart-item-column</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForNotVisible</td>
+	<td>css=div.cart-item-column</td>
+	<td></td>
+</tr>
+<tr>
+	<td>endForXml</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>xpath=html/body/div[1]/div/div[1]/div[1]/div[1]/div/div[1]/a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>fillCheckOutForm</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>using user extension to fill in the payment method details in credit card fields. paypal payment methond hasn't been created yet , need about 1-2 hours work to do it. </td>
+	<td></td>
+</tr>
+<tr>
+	<td>payByCrediCard</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//button[@title='Place Order']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeText</td>
+	<td>xpath=html/body/div[1]/div/div[2]/div/div[2]/div[1]/h2/span</td>
+	<td>createdOrder</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>createdOrder${i} = ${createdOrder}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>endForXml</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>function</td>
+	<td>delectAllItemsInCart</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForVisible</td>
+	<td>//span[@class='price']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeText</td>
+	<td>//span[@class='price']</td>
+	<td>myCartPrice</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>price = ${myCartPrice}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>while</td>
+	<td>javascript{storedVars['myCartPrice']!='0.00'}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>label</td>
+	<td>checkMyCartPrice</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=span.cart-total</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Remove item</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForVisible</td>
+	<td>//span[@class='price']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeText</td>
+	<td>//span[@class='price']</td>
+	<td>myCartPrice</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>price = ${myCartPrice}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>endWhile</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>endFunction</td>
+	<td></td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testdata>
+    <vars locator="//ul[@id='nav']/li[2]/a/span" title="Women's Outdoor Gear | Tops Jackets Footwear | Kathmandu AU"/>
+    <vars locator="xpath=(//a[contains(text(),'Tops')])[5]" title="Women's Tops | Hoodies Shirts T-Shirts Outdoor Clothes | Kathmandu AU"/>
+    <vars locator="xpath=(//a[contains(text(),'Jackets')])[5]" title="Women's Outdoor Jackets | Rain Fleece Down Coats | Kathmandu AU"/>
+    <vars locator="xpath=(//a[contains(text(),'Base Layers')])[5]" title="Women's Thermals | Merino Tops Underwear Polypro | Kathmandu AU"/>
+    <vars locator="xpath=(//a[contains(text(),'Trousers')])[5]" title="Women's Trousers | Outdoor Hiking Trousers Shorts | Kathmandu AU"/>
+    <vars locator="xpath=(//a[contains(text(),'Skirts &amp; Dresses')])[3]" title="Women's Travel Skirts &amp; Dresses | Travel City Casual | Kathmandu AU"/>
+    <vars locator="xpath=(//a[contains(text(),'Footwear')])[7]" title="Women's Footwear | Hiking Boots Shoes Sandals Socks | Kathmandu AU"/>
+    <vars locator="xpath=(//a[contains(text(),'Accessories')])[10]" title="Women's Accessories | Gloves Hats Scarves | Kathmandu AU"/>
+</testdata>

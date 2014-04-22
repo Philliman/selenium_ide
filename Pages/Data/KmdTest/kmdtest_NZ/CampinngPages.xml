@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testdata>
+    <vars locator="//ul[@id='nav']/li[5]/a/span" title="Camping Gear Online | Tents Sleeping Bags Equipment | Kathmandu NZ"/>
+    <vars locator="xpath=(//a[contains(text(),'Tents')])[2]" title="Camping Tent | 1, 2, 4 Person Family &amp;amp; Hiking Tents | Kathmandu NZ"/>
+    <vars locator="xpath=(//a[contains(text(),'Sleeping')])[5]" title="Camp Sleeping Gear | Sleeping Bags Beds Liners Mats | Kathmandu NZ"/>
+    <vars locator="xpath=(//a[contains(text(),'Lighting')])[3]" title="Camping Lights | Head Torch Torches Lanterns Solar | Kathmandu NZ"/>
+    <vars locator="xpath=(//a[contains(text(),'Kitchen')])[2]" title="Camp Kitchen | Pots Gas Cooker Equipment Food | Kathmandu NZ"/>
+    <vars locator="xpath=(//a[contains(text(),'Furniture')])[2]" title="Camping Furniture | Kitchen Camp Chairs Tables | Kathmandu NZ"/>
+    <vars locator="xpath=(//a[contains(text(),'Accessories')])[10]" title="Camping Accessories | Repair Pumps Tent Pegs Equipment | Kathmandu NZ"/>
+</testdata>

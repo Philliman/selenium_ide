@@ -1,0 +1,476 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://crmtest.kathmandu.com/" />
+<title>storeVariables</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">storeVariables</td></tr>
+</thead><tbody>
+<tr>
+	<td>store</td>
+	<td>http://crmtest.kathmandu.com/KathmanduTEST/</td>
+	<td>crmTEST</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>http://crmdev.kathmandu.com/KathmanduDEV/</td>
+	<td>crmDev</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>http://crm.kathmandu.com/Kathmandu/</td>
+	<td>Production</td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>${Production}</td>
+	<td>CRM_Window</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>66TEST6666</td>
+	<td>SCM</td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=nav_conts</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=nav_conts</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//input[@id='crmGrid_findCriteria']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//input[@id='crmGrid_findCriteria']</td>
+	<td>${SCM}</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>5000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//input[@id='crmGrid_findCriteria']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>keyPress</td>
+	<td>//input[@id='crmGrid_findCriteria']</td>
+	<td>\13</td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>css=nobr.gridcellpadding</td>
+	<td>${SCM}</td>
+</tr>
+<tr>
+	<td>storeText</td>
+	<td>xpath=html/body/div[1]/div[4]/div/div/div[1]/div[2]/div/div[2]/div/div[1]/div/div[1]/div[2]/div[2]/div/div/div/div[1]/table/tbody/tr/td[4]/nobr</td>
+	<td>lastname</td>
+</tr>
+<tr>
+	<td>storeText</td>
+	<td>xpath=html/body/div[1]/div[4]/div/div/div[1]/div[2]/div/div[2]/div/div[1]/div/div[1]/div[2]/div[2]/div/div/div/div[1]/table/tbody/tr/td[3]/nobr</td>
+	<td>firstname</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Contact: ${firstname} ${lastname} - Microsoft Dynamics CRM</td>
+	<td>title</td>
+</tr>
+<tr>
+	<td>doubleClick</td>
+	<td>//table[@id='gridBodyTable']/tbody/tr/td[5]/nobr</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPopUp</td>
+	<td></td>
+	<td>30000</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>5000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectWindow</td>
+	<td>title=${title}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeValue</td>
+	<td>id=firstname</td>
+	<td>FirstName</td>
+</tr>
+<tr>
+	<td>storeValue</td>
+	<td>id=lastname</td>
+	<td>LastName</td>
+</tr>
+<tr>
+	<td>storeValue</td>
+	<td>id=emailaddress1</td>
+	<td>EmailAddress1</td>
+</tr>
+<tr>
+	<td>storeValue</td>
+	<td>id=address1_line1</td>
+	<td>address1_line1</td>
+</tr>
+<tr>
+	<td>storeValue</td>
+	<td>id=address1_line2</td>
+	<td>address1_line2</td>
+</tr>
+<tr>
+	<td>storeValue</td>
+	<td>id=address1_line3</td>
+	<td>address1_line3</td>
+</tr>
+<tr>
+	<td>storeValue</td>
+	<td>id=address1_city</td>
+	<td>address1_city</td>
+</tr>
+<tr>
+	<td>storeValue</td>
+	<td>id=address1_postalcode</td>
+	<td>postCode</td>
+</tr>
+<tr>
+	<td>storeText</td>
+	<td>//*[@id='new_country_lookupTable']/tbody/tr/td[1]/div/ul</td>
+	<td>Country</td>
+</tr>
+<tr>
+	<td>storeValue</td>
+	<td>id=address1_stateorprovince</td>
+	<td>State</td>
+</tr>
+<tr>
+	<td>storeValue</td>
+	<td>id=telephone1</td>
+	<td>HomePhone</td>
+</tr>
+<tr>
+	<td>storeValue</td>
+	<td>id=new_workphone</td>
+	<td>WorkPhone</td>
+</tr>
+<tr>
+	<td>storeValue</td>
+	<td>id=telephone2</td>
+	<td>MobilePhone</td>
+</tr>
+<tr>
+	<td>storeValue</td>
+	<td>id=new_dpid</td>
+	<td>DPID</td>
+</tr>
+<tr>
+	<td>storeText</td>
+	<td>id=new_customertype</td>
+	<td>customerType</td>
+</tr>
+<tr>
+	<td>storeValue</td>
+	<td>id=new_summitclubmemberid</td>
+	<td>summitClubID</td>
+</tr>
+<tr>
+	<td>storeValue</td>
+	<td>css=#new_expirydate_d #DateInput</td>
+	<td>ExpiryDate</td>
+</tr>
+<tr>
+	<td>storeValue</td>
+	<td>css=#new_joindate_d #DateInput</td>
+	<td>JoinDate</td>
+</tr>
+<tr>
+	<td>storeSelectedValue</td>
+	<td>new_membertype</td>
+	<td>memberType</td>
+</tr>
+<tr>
+	<td>storeValue</td>
+	<td>new_username</td>
+	<td>UserName</td>
+</tr>
+<tr>
+	<td>storeValue</td>
+	<td>css=#modifiedon_d #DateInput</td>
+	<td>ModifiedDate</td>
+</tr>
+<tr>
+	<td>storeValue</td>
+	<td>css=#new_renewdate_d #DateInput</td>
+	<td>RenewDate</td>
+</tr>
+<tr>
+	<td>storeValue</td>
+	<td>css=#new_cardrequestedon_d #DateInput</td>
+	<td>CardRequestedOn</td>
+</tr>
+<tr>
+	<td>storeValue</td>
+	<td>css=#new_replacedate_d #DateInput</td>
+	<td>CardOrderedOn</td>
+</tr>
+<tr>
+	<td>storeText</td>
+	<td>//*[@id='footer_statecode_d']/div</td>
+	<td>Status</td>
+</tr>
+<tr>
+	<td>storeText</td>
+	<td>//*[@id='footer_statuscode_d']/div</td>
+	<td>StatusReason</td>
+</tr>
+<tr>
+	<td>storeSelectedValue</td>
+	<td>id=new_emailstatus</td>
+	<td>new_emailstatus</td>
+</tr>
+<tr>
+	<td>storeSelectedValue</td>
+	<td>id=new_poststatus</td>
+	<td>new_poststatus</td>
+</tr>
+<tr>
+	<td>storeText</td>
+	<td>id=new_textstatus</td>
+	<td>new_textstatus</td>
+</tr>
+<tr>
+	<td>storeValue</td>
+	<td>css=#birthdate_d #DateInput</td>
+	<td>DOB</td>
+</tr>
+<tr>
+	<td>storeText</td>
+	<td>//*[@id='new_primarystore_lookupTable']/tbody/tr/td[1]/div/ul/li/span/span</td>
+	<td>PrimaryStore</td>
+</tr>
+<tr>
+	<td>storeSelectedValue</td>
+	<td>id=gendercode</td>
+	<td>gendercode</td>
+</tr>
+<tr>
+	<td>storeSelectedValue</td>
+	<td>id=new_region</td>
+	<td>region</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>region = ${region}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>FirstName = ${FirstName}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>LastName = ${LastName}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>EmailAddress = ${EmailAddress1}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>Address 1 = ${address1_line1}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>Address 2 = ${address1_line2}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>Address 3 = ${address1_line3}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>City = ${address1_city}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>PostCode = ${postCode}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>State = ${State}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>Country = ${Country}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>emailStatus = ${new_emailstatus}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>state = ${new_poststatus}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>HomePhone = ${HomePhone}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>WorkPhone&nbsp;&nbsp;= ${WorkPhone}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>MobilePhone&nbsp;&nbsp;&nbsp;= ${MobilePhone}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>DPID = ${DPID}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>text =&nbsp;&nbsp;${new_textstatus}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>gender = ${gendercode}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>primaryStore = ${PrimaryStore}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>Region = ${region}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>##### membership details #######</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>customerType = ${customerType}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>memberType =&nbsp;&nbsp;${memberType}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>SummitClubID = ${summitClubID}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>expiryDate = ${ExpiryDate}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>joinDate = ${JoinDate}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>UserName = ${UserName}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>UserName = ${UserName}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>ModifiedDate = ${ModifiedDate}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>RenewDate = ${RenewDate}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>CardRequestedOn = ${CardRequestedOn}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>CardOrderedOn = ${CardOrderedOn}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>Status = ${Status}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>StatusReason = ${StatusReason}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>DOB = ${DOB}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>PrimaryStore = ${PrimaryStore}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>PrimaryStore = ${PrimaryStore}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>close</td>
+	<td></td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

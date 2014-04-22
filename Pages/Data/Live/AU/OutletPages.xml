@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testdata>
+    <vars locator="css=a.logo &gt; img[alt=&quot;Kathmandu&quot;]" title="Kathmandu | Shop Outdoor Clothing, Camping &amp; Travel Gear Australia"/>
+    <vars locator="//ul[@id='nav']/li[10]/a/span" title="Outdoor Clothing Outlet | Shop Clearance &amp; Outlet | Kathmandu AUS"/>
+    <vars locator="xpath=(//a[contains(text(),&quot;Men's&quot;)])[3]" title="Men's - Outlet"/>
+    <vars locator="xpath=(//a[contains(text(),&quot;Women's&quot;)])[3]" title="Women's - Outlet"/>
+    <vars locator="xpath=(//a[contains(text(),'Boys')])[3]" title="Boys - Outlet"/>
+    <vars locator="xpath=(//a[contains(text(),'Girls')])[3]" title="Girls - Outlet"/>
+    <vars locator="xpath=(//a[contains(text(),'Packs &amp; Bags')])[3]" title="Packs &amp; Bags - Outlet"/>
+    <vars locator="xpath=(//a[contains(text(),'Camping')])[3]" title="Camping - Outlet"/>
+    <vars locator="xpath=(//a[contains(text(),'Sleeping Gear')])[3]" title="Sleeping Gear - Outlet"/>
+    <vars locator="xpath=(//a[contains(text(),'Footwear')])[7]" title="Footwear - Outlet"/>
+    <vars locator="xpath=(//a[contains(text(),'Accessories')])[10]" title="Accessories - Outlet"/>
+    <vars locator="css=img.mt" title="Kathmandu | Shop Outdoor Clothing, Camping &amp; Travel Gear Australia"/>
+</testdata>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testdata>
+    <vars locator='css=a.level-top > span'/>
+    <vars locator="//ul[@id='nav']/li[2]/a/span"/>
+    <vars locator="//ul[@id='nav']/li[3]/a/span"/>
+    <vars locator="//ul[@id='nav']/li[4]/a/span"/>
+    <vars locator='link=Camping'/>
+    <vars locator="//ul[@id='nav']/li[6]/a/span"/>
+    <vars locator="//ul[@id='nav']/li[7]/a/span"/>
+    <vars locator="//ul[@id='nav']/li[8]/a/span"/>
+    <vars locator='css=li.summit-club.parent > a.level-top > span'/>
+    <vars locator="//ul[@id='nav']/li[10]/a/span"/>
+    <vars locator="//div[@id='summit-club']/a/span"/>
+    <vars locator='css=div.offer-container > a > img'/>
+    <vars locator='css=a[title="Contact Kathmandu"]'/>
+    <vars locator='css=a[title="Kathmandu Store Locator"]'/>
+    <vars locator='link=FAQs'/>
+    <vars locator='link=Delivery &amp; Shipping'/>
+    <vars locator='link=Returns &amp; Exchanges'/>
+    <vars locator='css=a[title="About My Account"]'/>
+    <vars locator='css=a[title="Product Safety Information"]'/>
+    <vars locator='link=Online'/>
+    <vars locator='css=a[title="How to Shop In Store"]'/>
+    <vars locator='css=a[title="How to Shop by Mail Order"]'/>
+    <vars locator="//div[@id='content']/div/div/div/ul/li[5]/ul/li[4]/a/span"/>
+    <vars locator="//div[@id='content']/div/div/div/ul/li[5]/ul/li[5]/a/span"/>
+    <vars locator="//div[@id='content']/div/div/div/ul/li[5]/ul/li[6]/a/span"/>
+    <vars locator="//div[@id='content']/div/div/div/ul/li[5]/ul/li[7]/a/span"/>
+    <vars locator="//div[@id='content']/div/div/div/ul/li[5]/ul/li[8]/a/span"/>
+    <vars locator="xpath=(//a[contains(text(),'Travel')])[2]"/>
+    <vars locator="xpath=(//a[contains(text(),'Camping')])[3]"/>
+    <vars locator="//a[contains(text(),'Hiking')]"/>
+    <vars locator="//a[contains(text(),'Cycling')]"/>
+    <vars locator='link=Running &amp; Fitness'/>
+    <vars locator='link=Active'/>
+    <vars locator='link=Snow &amp; Alpine'/>
+    <vars locator='link=Water Sports'/>
+    <vars locator='link=Videos'/>
+    <vars locator="//a[contains(text(),'Gear Lists')]"/>
+    <vars locator="//a[contains(text(),'Care Instructions')]"/>
+    <vars locator='link=Tent Pitching'/>
+    <vars locator='link=Tech Sheets'/>
+    <vars locator="//div[@id='content']/div/div/div/ul/li[3]/ul/li[6]/a/span"/>
+    <vars locator='css=ul.level-1 > li.parent > ul.level-1 > li > a > span'/>
+    <vars locator="//div[@id='content']/div/div/div/ul/li[3]/ul/li[6]/ul/li[2]/a/span"/>
+    <vars locator="//div[@id='content']/div/div/div/ul/li[3]/ul/li[7]/a/span"/>
+    <vars locator="css=span:contains('Our Favourite Campgrounds in')"/>
+    <vars locator="//div[@id='content']/div/div/div/ul/li[3]/ul/li[7]/ul/li[2]/a/span"/>
+    <vars locator="//div[@id='content']/div/div/div/ul/li[3]/ul/li[7]/ul/li[3]/a/span"/>
+    <vars locator="//div[@id='content']/div/div/div/ul/li[3]/ul/li[7]/ul/li[4]/a/span"/>
+    <vars locator="//div[@id='content']/div/div/div/ul/li[3]/ul/li[7]/ul/li[5]/a/span"/>
+    <vars locator="//div[@id='content']/div/div/div/ul/li[3]/ul/li[7]/ul/li[6]/a/span"/>
+    <vars locator="//div[@id='content']/div/div/div/ul/li[3]/ul/li[7]/ul/li[7]/a/span"/>
+    <vars locator="//div[@id='content']/div/div/div/ul/li[3]/ul/li[7]/ul/li[8]/a/span"/>
+    <vars locator="//div[@id='content']/div/div/div/ul/li[3]/ul/li[7]/ul/li[9]/a/span"/>
+    <vars locator='link=Tips and Tricks for Fun in the Sun'/>
+    <vars locator="//div[@id='content']/div/div/div/ul/li[3]/ul/li[7]/ul/li[11]/a/span"/>
+    <vars locator="//div[@id='content']/div/div/div/ul/li[3]/ul/li[7]/ul/li[12]/a/span"/>
+    <vars locator="//div[@id='content']/div/div/div/ul/li[3]/ul/li[7]/ul/li[13]/a/span"/>
+    <vars locator='link=Favourite Alpine Trails'/>
+    <vars locator="//div[@id='content']/div/div/div/ul/li[3]/ul/li[7]/ul/li[15]/a/span"/>
+    <vars locator="//div[@id='content']/div/div/div/ul/li[3]/ul/li[7]/ul/li[16]/a/span"/>
+    <vars locator="//div[@id='content']/div/div/div/ul/li[3]/ul/li[7]/ul/li[17]/a/span"/>
+    <vars locator='link=Camping Tips and Tricks'/>
+    <vars locator="//div[@id='content']/div/div/div/ul/li[3]/ul/li[7]/ul/li[19]/a/span"/>
+    <vars locator="//div[@id='content']/div/div/div/ul/li[3]/ul/li[8]/a/span"/>
+    <vars locator='link=Our Story'/>
+    <vars locator='css=ul.level-1 > li > a > span'/>
+    <vars locator="//div[@id='content']/div/div/div/ul/li[2]/ul/li[2]/a/span"/>
+    <vars locator='css=ul.level-1 > li.parent > ul.level-1 > li > a > span'/>
+    <vars locator="//div[@id='content']/div/div/div/ul/li[2]/ul/li[2]/ul/li[2]/a/span"/>
+    <vars locator="//div[@id='content']/div/div/div/ul/li[2]/ul/li[3]/a/span"/>
+    <vars locator='link=Minimising Our Environmental Footprint'/>
+    <vars locator="//div[@id='content']/div/div/div/ul/li[2]/ul/li[3]/ul/li[2]/a/span"/>
+    <vars locator='link=Developing Our Team'/>
+    <vars locator="//div[@id='content']/div/div/div/ul/li[2]/ul/li[5]/a/span"/>
+    <vars locator="//div[@id='content']/div/div/div/ul/li[2]/ul/li[6]/a/span"/>
+    <vars locator='link=Kathmandu Makes Dreams Come True for New Zealand Adventurers'/>
+    <vars locator='css=a.logo > img[alt="Kathmandu"]'/>
+    <vars locator='css=span.price'/>
+    <vars locator='css=span'/>    
+</testdata>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testdata>
+	<!--
+    <vars store="link=New Zealand" currency='label=$NZD' firstname='NZDomestic' lastname='KMDTEST' telephone='0733590877' email='kmdtesterphil+nzDomestic@gmail.com' password='kmd12345' street1='11 Mary Muller Drive' street2='' suburb='HeathCote' postcode='8022' city='Christchurch' country='label=New Zealand' region='' productFile='NZ_SKUs.xml' shippingMethod=''/>
+    <vars store="link=Australia" currency='label=$AUD' firstname='AUDomestic' lastname='KMDTEST' telephone='0733590877' email='kmdtesterphil+auDomestic@gmail.com' password='kmd12345' street1='249 Park Street' street2='' suburb='SOUTH MELBOURNE' postcode='3205' city='Melbourne' country='label=Australia' region='label=Victoria' productFile='Product_11481002.xml' shippingMethod='Kathmandu Shipping'/>
+    <vars store="link=New Zealand" currency='label=$HKD' firstname='NZToUSA' lastname='KMDTEST' telephone='033736110' email='kmdtesterphil+NZToUSA@gmail.com' password='kmd12345' street1='137 W North Bend Way' street2='' suburb='NORTH BEND' postcode='98045' city='Washington' country='label=United States' region='label=Washington' productFile='NZ_SKUs.xml' shippingMethod=''/>
+   
+    -->
+    <vars store="link=Australia" currency='label=$AUD' SCM='10SP506788' firstname='Regression' lastname='P001' telephone='032141568' email='kmdtesterphil+AU_P002@gmail.com' createAccount='true' password='kmd12345' street1='249 Park Street' street2='' suburb='SOUTH MELBOURNE' postcode='3205' city='Melbourne' country='label=Australia' region='label=Victoria' _firstname='SecondFirstname' _lastname='New002' _telephone='123456789' _email='kmdtesterphil+AU_P002_2@gmail.com' _password='kmd54321' _street1='349 Park Street' _street2='test' _suburb='Bryndwr' _postcode='8053' _city='Christchurch' _country='label=New Zealand' _region='Canterbury West Coast' productFile='Product_11481002.xml' shippingMethod='Kathmandu Shipping'/>
+   
+    <!--
+    	here is a example to make a proper product data to test 
+    <vars sku='12476902' size='label=10' quantity='10'/>
+    currency="label=¥CNY" label=¥JPY label=$HKD label=£GBP
+    	-->
+</testdata>

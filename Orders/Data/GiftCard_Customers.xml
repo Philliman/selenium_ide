@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testdata>
+    <vars store="link=New Zealand" currency='label=$NZD' firstname='PhilTest' lastname='KMDTEST' telephone='0733590877' email='kmdtesterphil+seleniumIdeTest@gmail.com' password='kmd12345' street1='13 Manor Place' street2='' suburb='Chremside' postcode='4032' city='Brisbane' country='label=New Zealand' region='' productFile='Products.xml' shippingMethod='' giftcardAmount='250'/>
+    
+    <!--
+    	here is a example to make a proper product data to test 
+    <vars sku='12476902' size='label=10' quantity='10'/>
+    currency="label=¥CNY" label=¥JPY label=$HKD label=£GBP
+    	-->
+</testdata>

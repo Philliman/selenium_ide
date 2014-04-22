@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testdata>
+    <vars locator="css=a.logo &gt; img[alt=&quot;Kathmandu&quot;]" title="Kathmandu | Shop Outdoor Clothing, Camping &amp; Travel Gear NZ"/>
+    <vars locator="link=Kids" title="Kids"/>
+    <vars locator="//div[@id='landing-page-banner']/map/area[2]" title="Girls Outdoor Clothing | Tops Jackets Footwear | Kathmandu NZ"/>
+    <vars locator="xpath=(//a[contains(text(),'Tops')])[5]" title="Girls Tops | Hoodies Pullovers Outdoor Shirts T-Shirts | Kathmandu NZ"/>
+    <vars locator="xpath=(//a[contains(text(),'Jackets')])[5]" title="Girls Outdoor Jackets | Rain Fleece Down GORE-TEX® | Kathmandu NZ"/>
+    <vars locator="xpath=(//a[contains(text(),'Base Layers')])[5]" title="Girls Thermals | Thermals Merino Quick Dry Outdoor | Kathmandu NZ"/>
+    <vars locator="xpath=(//a[contains(text(),'Trousers')])[5]" title="Girls Trousers | Outdoor Hiking Trousers Shorts | Kathmandu NZ"/>
+    <vars locator="xpath=(//a[contains(text(),'Skirts &amp; Dresses')])[3]" title="Girls Travel Skirts &amp; Dresses | Travel City Casual | Kathmandu NZ"/>
+    <vars locator="xpath=(//a[contains(text(),'Footwear')])[7]" title="Girls Outdoor Footwear | Hiking Boots Shoes Socks | Kathmandu NZ"/>
+    <vars locator="xpath=(//a[contains(text(),'Accessories')])[10]" title="Girls Accessories | Gloves Hats Scarves Outdoor Gear| Kathmandu NZ"/>
+</testdata>

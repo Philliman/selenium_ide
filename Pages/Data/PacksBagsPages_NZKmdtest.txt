@@ -1,0 +1,21 @@
+#testing: http://nz.kmdproduction.tundra.com.au/
+#test: PacksBagsPages
+open | /
+clickAndWait | //ul[@id='nav']/li[4]/a/span
+assertTitle | Backpacks & Bags | Backpacks Luggage Hiking Packs | Kathmandu NZ
+clickAndWait | xpath=(//a[contains(text(),'Packs')])[5]
+assertTitle | Packs | Travel Hiking Running Backpack Bags | Kathmandu NZ
+clickAndWait | xpath=(//a[contains(text(),'Bags')])[6]
+assertTitle | Bags | Cargo Sports Bags Beltbag Ski Rollerbag | Kathmandu NZ
+clickAndWait | xpath=(//a[contains(text(),'Day Packs')])[2]
+assertTitle | Day Packs | Laptop Backpack Commute School Bag | Kathmandu NZ
+clickAndWait | xpath=(//a[contains(text(),'Trolleys')])[2]
+assertTitle | Luggage Bags | Trolley Wheely Travel Bag Carry-On Case | Kathmandu NZ
+clickAndWait | xpath=(//a[contains(text(),'Hybrids')])[2]
+assertTitle | Travel Backpack | Rucksack Hybrid Daypack w/ Harness | Kathmandu NZ
+clickAndWait | xpath=(//a[contains(text(),'Child Carriers')])[2]
+assertTitle | Child Carriers | Child Carrier Backpack Hiking| Kathmandu NZ
+clickAndWait | xpath=(//a[contains(text(),'Packing Solutions')])[2]
+assertTitle | Packing Solutions | Stuff Sacks Toiletry Bag Cells | Kathmandu NZ
+clickAndWait | xpath=(//a[contains(text(),'Accessories')])[10]
+assertTitle | Luggage Accessories | Money Belt Locks Wallet Tags | Kathmandu NZ

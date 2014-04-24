@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testdata>
-    <vars locator="css=a.logo &gt; img[alt=&quot;Kathmandu&quot;]" title="Kathmandu | Shop Outdoor Clothing, Camping &amp; Travel Gear NZ"/>
+    <vars locator="//div[@id='header']/div/a/span" title="Kathmandu | Shop Outdoor Clothing, Camping &amp; Travel Gear NZ"/>
     <vars locator="//ul[@id='nav']/li[8]/a/span" title="Outdoor Accessories | Adaptors Bottles Cells &amp; More | Kathmandu NZ"/>
     <vars locator="xpath=(//a[contains(text(),'Travel')])[2]" title="Travel Accessories | Microfibre Towels Luggage Locks etc | Kathmandu NZ"/>
     <vars locator="xpath=(//a[contains(text(),'Active')])[2]" title="Active Accessories | Cycling Running Walking Outdoors | Kathmandu NZ"/>

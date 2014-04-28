@@ -12,6 +12,26 @@
 <tr><td rowspan="1" colspan="3">MensPages</td></tr>
 </thead><tbody>
 <tr>
+	<td>store</td>
+	<td>file:///var/lib/jenkins/jobs/Go through every page and verify title/workspace/</td>
+	<td>jenkins_basePath</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>file:///home/philch/Documents/selenium_ide/</td>
+	<td>basePath</td>
+</tr>
+<tr>
+	<td>forXml</td>
+	<td>${jenkins_basePath}Pages/Data/Live/NZ/AllPages.xml</td>
+	<td></td>
+</tr>
+<tr>
+	<td>forXml</td>
+	<td>${jenkins_basePath}${file}</td>
+	<td></td>
+</tr>
+<tr>
 	<td>forXml</td>
 	<td>file://Pages/Data/Live/NZ\MensPages.xml</td>
 	<td></td>

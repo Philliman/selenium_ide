@@ -13,17 +13,22 @@
 </thead><tbody>
 <tr>
 	<td>store</td>
-	<td>file://C:\Users\philch\Desktop\selenium_IDE\Pages\Data\Live\AU\</td>
+	<td>file:///var/lib/jenkins/jobs/Go through every page and verify title/workspace/</td>
+	<td>jenkins_basePath</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>file:///home/philch/Documents/selenium_ide/</td>
 	<td>basePath</td>
 </tr>
 <tr>
 	<td>forXml</td>
-	<td>${basePath}AllPages.xml</td>
+	<td>${jenkins_basePath}Pages/Data/Live/NZ/AllPages.xml</td>
 	<td></td>
 </tr>
 <tr>
 	<td>forXml</td>
-	<td>${basePath}${file}</td>
+	<td>${jenkins_basePath}${file}</td>
 	<td></td>
 </tr>
 <tr>
@@ -96,7 +101,6 @@
 	<td></td>
 	<td></td>
 </tr>
-
 </tbody></table>
 </body>
 </html>

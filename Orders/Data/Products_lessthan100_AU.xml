@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testdata>
+    <vars sku='40390441' size='' quantity='1'/> 
+    <vars sku='40483607' size='label=8LTR (In Clearance)' quantity='1'/>
+    <vars sku='61253902' size='label=S (In Clearance)' quantity='1'/>
+    
+    <!--
+    	here is a example to make a proper product data to test 
+    <vars sku='12476902' size='label=10' quantity='10'/>
+
+
+    eVoucher Gift Card - Hiking
+    eVoucher Gift Card - Yacht
+    eVoucher Gift Card - Kids
+    eVoucher Gift Card - Volcano
+    eVoucher Gift Card - Rainbow
+	-->
+</testdata>

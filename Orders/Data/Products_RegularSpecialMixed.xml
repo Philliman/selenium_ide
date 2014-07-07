@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testdata>
+	<!--
+    <vars sku='61191040' size='' quantity=''/>
+    <vars sku='11481002' size='label=L' quantity='2'/>
+    <vars sku='40390441' size='' quantity=''/>
+    <vars sku='61253902' size='label=S (In Clearance)' quantity='1'/>
+    <vars sku='30463602' size='label=US11 (In Clearance)' quantity='1'/>
+    <vars sku='13217659' size='label=L (In Clearance)' quantity='1'/>
+    <vars sku='40483607' size='label=8LTR (In Clearance)' quantity='1'/>
+    <vars sku='evoucher' size='eVoucher Gift Card - Kids' quantity='123'/><vars sku='40552902' size='' quantity='1'/>
+    <vars sku='40396620' size='label=1.5LT (In Clearance)' quantity='1'/>
+    <vars sku='40552950' size='' quantity='1'/>
+    <vars sku='12951D68' size='label=L' quantity='1'/>
+    <vars sku='13577902' size='label=M' quantity='1'/>
+    -->
+ 
+    <vars sku='13295902' size='label=L' quantity='1'/>
+    <vars sku='13555636' size='label=L' quantity='1'/>
+    <vars sku='13655902' size='label=M' quantity='2'/>
+    <vars sku='13655300' size='label=M' quantity='1'/>    
+    <vars sku='13555636' size='label=M' quantity='1'/>
+ 
+   <!--    
+    
+    <vars sku='13657200' size='label=L' quantity='1'/>
+    
+    <vars sku='13657200' size='label=M' quantity='1'/>
+    <vars sku='13654902' size='label=12' quantity='1'/>
+    <vars sku='13652902' size='label=12' quantity='1'/>
+ 
+    	here is a example to make a proper product data to test 
+    <vars sku='12476902' size='label=10' quantity='10'/>
+
+    here is a list of valid sku with price updated on 4/7/2014
+    40390441     Clearance Price 3.99
+    61253902 /S  Clrearance Price $24.99
+    30463602 /US11  Clrearance Price $49.99
+    13217659 /L  Clrearance Price $49.99
+    40483607 /8LTR  Clrearance Price $14.99
+    40396620 /1.5LTR  Clrearance Price $23.98
+    40552950 /  Clrearance Price $19.99
+    61253902 /S  Clrearance Price $24.99
+
+    regular / summit price products
+    12951D68 /L   R 139.99 S 83.99
+    13577902 /M   R 79.98 S 47.99
+    13295902 /L   R 99.98 S 59.99
+    13555636 /L   R 79.98 S 47.99
+    13555636 /M   R 79.98 S 47.99
+    40552902 /    R 79.98 S 47.99
+    51217031 /    R 119.98 S 71.99
+    
+    special 2 for 59.98 products
+    13655902 /M   R 69.98  S 41.99
+	13655300 /M   R 69.98  S 41.99
+	13657200 /M   R 59.98  S 35.99
+	13657200 /L   R 59.98  S 35.99
+	13654902 /12  R 59.98  S 35.99
+	13652902 /12  R 49.98  S 29.99
+
+	-->
+</testdata>

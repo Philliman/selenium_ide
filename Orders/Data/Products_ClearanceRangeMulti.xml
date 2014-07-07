@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testdata>
+    <vars sku='61191040' size='' quantity=''/>
+    <vars sku='11481002' size='label=L' quantity='2'/>
+    <!--
+    	here is a example to make a proper product data to test 
+    <vars sku='12476902' size='label=10' quantity='10'/>
+	-->
+</testdata>

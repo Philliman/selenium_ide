@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testdata>
+	<!--
+    <vars store="link=New Zealand" currency='label=$NZD' firstname='NZDomestic' lastname='KMDTEST' telephone='0733590877' email='kmdtesterphil+nzDomestic@gmail.com' password='kmd12345' street1='11 Mary Muller Drive' street2='' suburb='HeathCote' postcode='8022' city='Christchurch' country='label=New Zealand' region='' productFile='NZ_SKUs.xml' shippingMethod=''/>
+    <vars store="link=Australia" currency='label=$AUD' firstname='AUDomestic' lastname='KMDTEST' telephone='0733590877' email='kmdtesterphil+auDomestic@gmail.com' password='kmd12345' street1='249 Park Street' street2='' suburb='SOUTH MELBOURNE' postcode='3205' city='Melbourne' country='label=Australia' region='label=Victoria' productFile='Product_11481002.xml' shippingMethod='Kathmandu Shipping'/>
+    <vars store="link=New Zealand" currency='label=$HKD' firstname='NZToUSA' lastname='KMDTEST' telephone='033736110' email='kmdtesterphil+NZToUSA@gmail.com' password='kmd12345' street1='137 W North Bend Way' street2='' suburb='NORTH BEND' postcode='98045' city='Washington' country='label=United States' region='label=Washington' productFile='NZ_SKUs.xml' shippingMethod=''/>
+   
+
+  
+    <vars store="link=Australia" currency='label=¥JPY' firstname='AXTradeAndLogistics' lastname='uat1' telephone='032141568' email='new' password='kmd12345' street1='249 Park Street' street2='Street2' suburb='South Melbourne' postcode='3025' city='Melbourne' country='label=Australia' region='label=Victoria' productFile='Products_summitWithItem.xml' shippingMethod='' SCM='' Env='frontend'/>
+
+    <vars store="link=Australia" currency='label=¥CNY' firstname='AXTradeAndLogistics' lastname='uat1' telephone='032141568' email='new' password='' street1='249 Park Street' street2='Street2' suburb='South Melbourne' postcode='3025' city='Melbourne' country='label=Australia' region='label=Victoria' productFile='Products_regular01.xml' shippingMethod='' SCM='' Env='frontend'/>
+      
+    <vars store="link=Australia" currency='label=$AUD' firstname='AXTradeAndLogistics' lastname='uat1' telephone='033801028' email='new' password='kmd12345' street1='334 Section 2 Yuanlin Rd,' street2='Street2' suburb='Dashi' postcode='335' city='Taoyuan' country='label=Taiwan' region='' productFile='Products_regular02.xml' shippingMethod='' SCM='66test6666' Env='frontend'/>
+     
+    <vars store="link=Australia" currency='label=$AUD' firstname='AXTradeAndLogistics' lastname='uat1' telephone='032141568' email='new' password='' street1='249 Park Street' street2='Street2' suburb='South Melbourne' postcode='3025' city='Melbourne' country='label=Australia' region='label=Victoria' productFile='Products_MultiOver100.xml' shippingMethod='' SCM='' Env='frontend'/>
+ -->   
+    <vars store="link=Australia" currency='label=$AUD' firstname='AXTradeAndLogistics' lastname='uat1' telephone='032141568' email='new' password='' street1='249 Park Street' street2='Street2' suburb='South Melbourne' postcode='3025' city='Melbourne' country='label=Australia' region='label=Victoria' productFile='Products_lessthan100_AU.xml' shippingMethod='' SCM='' Env='frontend'/>
+    
+    <vars store="link=Australia" currency='label=$AUD' firstname='AXTradeAndLogistics' lastname='uat1' telephone='032141568' email='new' password='' street1='249 Park Street' street2='Street2' suburb='South Melbourne' postcode='3025' city='Melbourne' country='label=Australia' region='label=Victoria' productFile='Products_ClearanceRangeMulti.xml' shippingMethod='' SCM='' Env='frontend'/>
+    
+    <vars store="link=Australia" currency='label=$AUD' firstname='AXTradeAndLogistics' lastname='uat1' telephone='032141568' email='new' password='' street1='249 Park Street' street2='Street2' suburb='South Melbourne' postcode='3025' city='Melbourne' country='label=Australia' region='label=Victoria' productFile='Products_RegularSpecialMixed.xml' shippingMethod='' SCM='' Env='frontend'/>
+<!--    
+   
+    <vars store="link=United Kingdom" currency='' firstname='Phil' lastname='UAT1' telephone='032141568' email='new' password='kmd12345' street1='13 Manor Place' street2='Street2' suburb='' postcode='OX1 3UW' city='Oxford' country='label=United Kingdom' region='' productFile='SKU_summitOnly.xml' shippingMethod='' SCM='' Env='frontend'/>
+    -->
+    <!--
+    	here is a example to make a proper product data to test 
+    <vars sku='12476902' size='label=10' quantity='10'/>
+    currency="label=¥CNY" label=¥JPY label=$HKD label=£GBP
+    	-->
+</testdata>

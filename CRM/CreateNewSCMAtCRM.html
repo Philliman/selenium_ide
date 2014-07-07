@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://crmtest.kathmandu.com/" />
+<title>CreateNewSCMAtCRM</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">CreateNewSCMAtCRM</td></tr>
+</thead><tbody>
+<tr>
+	<td>store</td>
+	<td>70SP143526</td>
+	<td>SCM</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>kmdtesterphil+SCM${SCM}@gmail.com</td>
+	<td>emailAddress</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${emailAddress}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>/KathmanduTEST/main.aspx</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTitle</td>
+	<td>exact:Dashboards: Microsoft Dynamics CRM Overview - Microsoft Dynamics CRM</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=#nav_conts &gt; nobr.ms-crm-NavBar-Subarea-Title</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>css=img.ms-crm-ImageStrip-newrecord32</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=img.ms-crm-ImageStrip-newrecord32</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPopUp</td>
+	<td></td>
+	<td>30000</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>5000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectWindow</td>
+	<td>title=Contact: New - Microsoft Dynamics CRM</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=firstname</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=firstname</td>
+	<td>Tester</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=lastname</td>
+	<td>Kmd</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=telephone1</td>
+	<td>3516995</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=emailaddress1</td>
+	<td>${emailAddress}</td>
+</tr>
+<tr>
+	<td>selectWindow</td>
+	<td>name=contentIFrame</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=address1_line1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=address1_line1</td>
+	<td>Billing Street1</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=address1_line2</td>
+	<td>Billing Street2</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=address1_line3</td>
+	<td>Billing Street3</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=address1_city</td>
+	<td>CITY</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=address1_postalcode</td>
+	<td>1111</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=address1_line1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=address2_line1</td>
+	<td>address Street1</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=address2_line2</td>
+	<td>address Street2</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=address2_line3</td>
+	<td>address Street3</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=address2_city</td>
+	<td>address City</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=address2_postalcode</td>
+	<td>2222</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=new_country</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPopUp</td>
+	<td></td>
+	<td>30000</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>5000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectWindow</td>
+	<td>title=Look Up Record</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=koo_address2_countryid</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=new_summitclubmemberid</td>
+	<td>${SCM}</td>
+</tr>
+<tr>
+	<td>selectWindow</td>
+	<td>null</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=cmdDialogCancel</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPopUpAndWait</td>
+	<td>_self</td>
+	<td>30000</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=gridBodyTable_primaryField_{56CB5E72-B0BE-E211-803E-005056935BFA}_0</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPopUpAndWait</td>
+	<td>_self</td>
+	<td>30000</td>
+</tr>
+<tr>
+	<td>selectWindow</td>
+	<td>name=1404175170941</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=img.ms-crm-ImageStrip-Save_32</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTitle</td>
+	<td>Microsoft Dynamics CRM</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

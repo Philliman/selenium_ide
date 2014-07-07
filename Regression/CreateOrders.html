@@ -13,8 +13,13 @@
 </thead><tbody>
 <tr>
 	<td>store</td>
-	<td>http://nz.kmdtest.tundra.com.au</td>
-	<td>baseURL</td>
+	<td>file:///C:/Users/philch/Documents/GitHub/selenium_ide/</td>
+	<td>basePath</td>
+</tr>
+<tr>
+	<td>forXml</td>
+	<td>${basePath}baseEnvironment.xml</td>
+	<td></td>
 </tr>
 <tr>
 	<td>open</td>
@@ -23,7 +28,7 @@
 </tr>
 <tr>
 	<td>store</td>
-	<td>file:///C:/Users/philch/Desktop/selenium_IDE/Orders/Data/</td>
+	<td>${basePath}Orders/Data/</td>
 	<td>basePath</td>
 </tr>
 <tr>
@@ -237,8 +242,18 @@
 	<td></td>
 </tr>
 <tr>
+	<td>waitForText</td>
+	<td>css=strong &gt; span.price</td>
+	<td>$27.13</td>
+</tr>
+<tr>
 	<td>clickAndWait</td>
 	<td>//button[@title='Place Order']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>xpath=html/body/div[1]/div/div[2]/div/div[2]/div[1]/h2/span</td>
 	<td></td>
 </tr>
 <tr>
@@ -249,6 +264,11 @@
 <tr>
 	<td>echo</td>
 	<td>createdOrder${i} = ${createdOrder}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>endForXml</td>
+	<td></td>
 	<td></td>
 </tr>
 <tr>

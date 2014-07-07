@@ -142,6 +142,8 @@ Selenium.prototype.doStoreRandom = function(variableName){
 Selenium.prototype.doFillCheckOutForm = function(){
     var firstnameLocator = "id=billing_firstname";
     var regionPresent = this.isElementPresent("id=billing_region_id");
+    
+    this.doEmailValidation();
 
     this.doType("id=billing_firstname", storedVars["firstname"]);
     this.doType("id=billing_lastname", storedVars["lastname"]);
@@ -149,13 +151,10 @@ Selenium.prototype.doFillCheckOutForm = function(){
     this.doType("id=billing_telephone", storedVars["telephone"]);
     this.doType("id=billing_email", storedVars["email"]);
     if(storedVars['createAccount']=='true') this.doCheck("id=customer_account_create");
-    this.doType("id=billing_customer_password", storedVars["password"]);
-    this.doType("id=billing_confirm_password", storedVars["password"]);
-    this.doClick("//div[@id='register-customer-fields']/div[2]");
     this.doType("id=billing_street1", storedVars["street1"]);
     this.doType("id=billing_street2", storedVars["street2"]);
     this.doType("id=billing_city", storedVars["suburb"]);
-    if (regionPresent&& storedVars['region']!=''){
+    if (regionPresent && storedVars['region']!=''){
         if (storedVars['region'].indexOf('label=')!=-1){
             this.doSelect("id=billing_region_id", storedVars["region"]);}
         else{
@@ -164,9 +163,14 @@ Selenium.prototype.doFillCheckOutForm = function(){
     this.doType("id=billing_town", storedVars["city"]);
     this.doType("css=div.control-group.postcode-standard > div.controls > #billing_postcode", storedVars["postcode"]);
     this.doType("id=customer_comment", "need to add this to xml");
-    // selenium.if("javascript{storedVars['shippingMethod']!=''}");
-    // this.doWaitForCondition(this.isElementPresent("id=s_method_temando_free_3"), timeToWait)
-    // this.doClick("id=s_method_temando_free_3");
+     
+    if(storedVars["passwordFieldatCheckout"]==true && storedVars["password"]=="kmd12345"){
+        this.doEcho("test inside password loop")
+        this.doClick("//div[@id='register-customer-fields']/div[2]");
+        this.doType("id=billing_customer_password", storedVars["password"]);
+        this.doType("id=billing_confirm_password", storedVars["password"]);
+    }
+    
 }
 
 Selenium.prototype.doPayByCrediCard = function(){
@@ -184,7 +188,7 @@ Selenium.prototype.doPayByCrediCard = function(){
     this.doClick("id=cybersource_cc_number");
 }
 
-Selenium.prototype.doConvertCountryFormat = function(){
+Selenium.prototype.doConvertCountryFormatTop = function(){
     storedVars['currentStore'] = this.getText("xpath=html/body/div[1]/div/div[1]/div[1]/div[1]/div/div[2]/ul/li[1]/a/span");
     if (storedVars['currentStore']=="AUS"){
         storedVars['currentStore'] = "link=Australia";}
@@ -193,7 +197,6 @@ Selenium.prototype.doConvertCountryFormat = function(){
     else if (storedVars['currentStore']=="UK"){
         storedVars['currentStore'] = "link=United Kingdom";}
 }
-
 // the below function won't work as the wait functions within the snippet won't work at all. Need to find a solution for it later.  
 Selenium.prototype.doEmptyMyCart = function(){
     this.doClick("css=span.cart-total");
@@ -211,18 +214,6 @@ Selenium.prototype.doEmptyMyCart = function(){
         this.doClick("link=Remove item");
         this.doEcho("remove item");
         this.doWaitForPageToLoad(30000);}
-        // this.doEcho("In while loop");
-        // this.doClick("css=span.cart-total");
-        // this.doEcho("clicked on cart total");
-        // this.doWaitForPageToLoad(30000);
-        // this.doEcho("wait for page to load");
-        // if(this.isElementPresent("link=Remove item")) {this.doClick("link=Remove item");
-        // this.doEcho("remove item");
-        // this.doWaitForPageToLoad(30000);}
-
-        // this.doWaitForCondition(this.isVisible("//span[@class='price']"), timeToWait);
-        // myCartPrice = this.getText("//span[@class='price']");
-        
 }
 
 
@@ -242,18 +233,6 @@ Selenium.prototype.doVerifyDetailsOnInfoPage = function(){
         this.doClick("link=Remove item");
         this.doEcho("remove item");
         this.doWaitForPageToLoad(30000);}
-        // this.doEcho("In while loop");
-        // this.doClick("css=span.cart-total");
-        // this.doEcho("clicked on cart total");
-        // this.doWaitForPageToLoad(30000);
-        // this.doEcho("wait for page to load");
-        // if(this.isElementPresent("link=Remove item")) {this.doClick("link=Remove item");
-        // this.doEcho("remove item");
-        // this.doWaitForPageToLoad(30000);}
-
-        // this.doWaitForCondition(this.isVisible("//span[@class='price']"), timeToWait);
-        // myCartPrice = this.getText("//span[@class='price']");
-        
 }
 
 
@@ -480,6 +459,7 @@ Selenium.prototype.doClickOnVisible= function(locator){
 
 
 Selenium.prototype.doEnterEvoucherForm = function(condition){
+    this.doEmailValidation();
     this.doSelect("id=evoucher-design", storedVars["size"]);
     if(storedVars['quantity'].indexOf('label')==0)  this.doSelect("id=custom_price_preset", storedVars["quantity"]);
     else this.doType("id=custom_price", storedVars['quantity']);
@@ -487,4 +467,16 @@ Selenium.prototype.doEnterEvoucherForm = function(condition){
     this.doType("id=evoucher_recipient_email", storedVars["email"]);
     this.doType("id=evoucher_sender_name", storedVars["lastname"]+storedVars["firstname"]);
     this.doType("id=evoucher_message", storedVars["testName"]);
+}
+
+Selenium.prototype.doEmailValidation = function(){
+    if(storedVars["email"] == "new"){
+        var now = new Date();
+        storedVars["email"] = "kmdtesterphil+" + now.valueOf() + "@gmail.com";
+    } 
+}
+Selenium.prototype.doLogout = function(){
+    if(this.isElementPresent("id=logout-link")){
+       this.doClick("id=logout-link")
+    } 
 }

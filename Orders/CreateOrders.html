@@ -13,7 +13,7 @@
 </thead><tbody>
 <tr>
 	<td>echo</td>
-	<td>this test will create orders on the fronend by a xml file, please modify or create a new xml to create orders, and there has other xml file which will add item to cart by the search box, create new one if required. </td>
+	<td>this test will create orders on the frontend by a xml file, please modify or create a new xml to create orders, and there has other xml file which will add item to cart by the search box, create new one if required. </td>
 	<td></td>
 </tr>
 <tr>
@@ -23,27 +23,22 @@
 </tr>
 <tr>
 	<td>store</td>
-	<td>http://nz.kmdtest.tundra.com.au</td>
+	<td>http://uat1.kmddev.com.au</td>
 	<td>baseURL</td>
 </tr>
 <tr>
-	<td>store</td>
-	<td>http://nz.master.kathmandu.co.nz</td>
-	<td>master_baseURL</td>
-</tr>
-<tr>
 	<td>open</td>
-	<td>${master_baseURL}</td>
+	<td>${baseURL}</td>
 	<td></td>
 </tr>
 <tr>
 	<td>store</td>
-	<td>file:///C:/Users/philch/Desktop/selenium_IDE/Orders/Data/</td>
+	<td>file:///C:/Users/philch/Documents/GitHub/selenium_ide/Orders/Data/</td>
 	<td>basePath</td>
 </tr>
 <tr>
 	<td>store</td>
-	<td>International&amp;Domesticshipppingtests</td>
+	<td>OrdersForAX</td>
 	<td>testName</td>
 </tr>
 <tr>
@@ -53,7 +48,17 @@
 </tr>
 <tr>
 	<td>forXml</td>
-	<td>${basePath}InternationalShippingOrders.xml</td>
+	<td>${basePath}Orders.xml</td>
+	<td></td>
+</tr>
+<tr>
+	<td>logoutAndWait</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForVisible</td>
+	<td>link=Login</td>
 	<td></td>
 </tr>
 <tr>
@@ -62,8 +67,13 @@
 	<td></td>
 </tr>
 <tr>
-	<td>convertCountryFormat</td>
+	<td>convertCountryFormatTop</td>
 	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>currentstore =&nbsp;&nbsp;${currentStore}&nbsp;&nbsp;&nbsp;$$$$ store = ${store}</td>
 	<td></td>
 </tr>
 <tr>
@@ -87,8 +97,8 @@
 	<td></td>
 </tr>
 <tr>
-	<td>call</td>
-	<td>delectAllItemsInCart</td>
+	<td>if</td>
+	<td>javascript{storedVars['store']!='link=United Kingdom'}</td>
 	<td></td>
 </tr>
 <tr>
@@ -105,6 +115,11 @@
 	<td>selectAndWait</td>
 	<td>css=select</td>
 	<td>${currency}</td>
+</tr>
+<tr>
+	<td>endIf</td>
+	<td></td>
+	<td></td>
 </tr>
 <tr>
 	<td>endIf</td>
@@ -144,6 +159,11 @@
 <tr>
 	<td>endIf</td>
 	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>call</td>
+	<td>delectAllItemsInCart</td>
 	<td></td>
 </tr>
 <tr>
@@ -277,6 +297,21 @@
 	<td></td>
 </tr>
 <tr>
+	<td>waitForElementPresent</td>
+	<td>id=billing_email</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeElementPresent</td>
+	<td>id=billing_customer_password</td>
+	<td>passwordFieldatCheckout</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${passwordFieldatCheckout}</td>
+	<td></td>
+</tr>
+<tr>
 	<td>fillCheckOutForm</td>
 	<td></td>
 	<td></td>
@@ -287,8 +322,23 @@
 	<td></td>
 </tr>
 <tr>
+	<td>waitForElementNotPresent</td>
+	<td>css=div.control-group &gt; ul.messages &gt; li.error-msg &gt; ul &gt; li</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>css=strong &gt; span.price</td>
+	<td></td>
+</tr>
+<tr>
 	<td>payByCrediCard</td>
 	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
 	<td></td>
 </tr>
 <tr>

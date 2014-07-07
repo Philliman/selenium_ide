@@ -12,6 +12,7 @@
 <tr><td><a href="extensionTest.html">extensionTest</a></td></tr>
 <tr><td><a href="orderPayByGiftCard.html">orderPayByGiftCard</a></td></tr>
 <tr><td><a href="PaypalPaymentMethod.html">PaypalPaymentMethod</a></td></tr>
+<tr><td><a href="CreateOrderByPaypal.html">CreateOrdersByPaypal</a></td></tr>
 </tbody></table>
 </body>
 </html>

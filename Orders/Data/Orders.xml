@@ -14,13 +14,109 @@
     <vars store="link=Australia" currency='label=$AUD' firstname='AXTradeAndLogistics' lastname='uat1' telephone='033801028' email='new' password='kmd12345' street1='334 Section 2 Yuanlin Rd,' street2='Street2' suburb='Dashi' postcode='335' city='Taoyuan' country='label=Taiwan' region='' productFile='Products_regular02.xml' shippingMethod='' SCM='66test6666' Env='frontend'/>
      
     <vars store="link=Australia" currency='label=$AUD' firstname='AXTradeAndLogistics' lastname='uat1' telephone='032141568' email='new' password='' street1='249 Park Street' street2='Street2' suburb='South Melbourne' postcode='3025' city='Melbourne' country='label=Australia' region='label=Victoria' productFile='Products_MultiOver100.xml' shippingMethod='' SCM='' Env='frontend'/>
- -->   
+    
+    <vars store="link=United Kingdom" currency='' firstname='orderNoRestructure' lastname='uat1' telephone='032141568' email='new' password='kmd12345' street1='13 Manor Place' street2='Street2' suburb='' postcode='OX1 3UW' city='Oxford' country='label=United Kingdom' region='' productFile='Products_summitWithItem.xml' shippingMethod='' SCM='' Env='frontend'/>
+  
+
+    <vars store="link=New Zealand" currency='label=$NZD' firstname='orderNoRestructure' lastname='uat1' telephone='032141568' email='new' password='kmd12345' street1='4 Manor place' street2='Street2' suburb='Bryndwr' postcode='8053' city='Christchurch' country='label=New Zealand' region='' productFile='Products_summitWithItem.xml' shippingMethod='' SCM='' Env='frontend'/>
+
+
+    <vars store="link=New Zealand" currency='label=$NZD' firstname='orderNoRestructure' lastname='uat1' telephone='032141568' email='new' password='kmd12345' street1='4 Manor place' street2='Street2' suburb='Bryndwr' postcode='8053' city='Christchurch' country='label=New Zealand' region='' productFile='Products_lessthan100_AU.xml' shippingMethod='' SCM='' Env='frontend'/>
+    
+    <vars store="link=New Zealand" currency='label=$NZD' firstname='orderNoRestructure' lastname='uat1' telephone='032141568' email='new' password='kmd12345' street1='4 Manor place' street2='Street2' suburb='Bryndwr' postcode='8053' city='Christchurch' country='label=New Zealand' region='' productFile='Products_ClearanceRangeMulti.xml' shippingMethod='' SCM='' Env='frontend'/>
+ --> 
+ 
+    <vars store="link=Australia" currency='label=¥CNY' firstname='MagentoAXOrder01test' lastname='uat1AU' telephone='032141568' email='new' password='kmd12345' street1='249 Park Street' street2='Street2' suburb='South Melbourne' postcode='3025' city='Melbourne' country='label=Australia' region='label=Victoria' productFile='AU_Products_01.xml' shippingMethod='' SCM='' Env='frontend'/>
+
+    <vars store="link=Australia" currency='label=$AUD' firstname='MagentoAXOrder02test' lastname='uat1AU' telephone='032141568' email='new' password='kmd12345' street1='249 Park Street' street2='Street2' suburb='South Melbourne' postcode='3025' city='Melbourne' country='label=Australia' region='label=Victoria' productFile='AU_Products_02.xml' shippingMethod='' SCM='' Env='frontend'/>
+    
+    <vars store="link=Australia" currency='label=¥CNY' firstname='MagentoAXOrder03test' lastname='uat1AU' telephone='032141568' email='new' password='kmd12345' street1='249 Park Street' street2='Street2' suburb='South Melbourne' postcode='3025' city='Melbourne' country='label=Australia' region='label=Victoria' productFile='AU_Products_03.xml' shippingMethod='' SCM='' Env='frontend'/>
+<!--    
+    <vars store="link=Australia" currency='label=$AUD' firstname='MagentoAXOrder04' lastname='uat1AU' telephone='032141568' email='new' password='kmd12345' street1='249 Park Street' street2='Street2' suburb='South Melbourne' postcode='3025' city='Melbourne' country='label=Australia' region='label=Victoria' productFile='AU_Products_04.xml' shippingMethod='' SCM='' Env='frontend'/>
+    
+    <vars store="link=Australia" currency='label=$AUD' firstname='MagentoAXOrder05' lastname='uat1AU' telephone='032141568' email='new' password='kmd12345' street1='249 Park Street' street2='Street2' suburb='South Melbourne' postcode='3025' city='Melbourne' country='label=Australia' region='label=Victoria' productFile='AU_Products_05.xml' shippingMethod='' SCM='' Env='frontend'/>
+    
+    <vars store="link=Australia" currency='label=$AUD' firstname='MagentoAXOrder06' lastname='uat1AU' telephone='032141568' email='new' password='kmd12345' street1='249 Park Street' street2='Street2' suburb='South Melbourne' postcode='3025' city='Melbourne' country='label=Australia' region='label=Victoria' productFile='AU_Products_06.xml' shippingMethod='' SCM='' Env='frontend'/>
+    
+    <vars store="link=Australia" currency='label=$AUD' firstname='MagentoAXOrder07' lastname='uat1AU' telephone='032141568' email='new' password='kmd12345' street1='249 Park Street' street2='Street2' suburb='South Melbourne' postcode='3025' city='Melbourne' country='label=Australia' region='label=Victoria' productFile='AU_Products_07.xml' shippingMethod='' SCM='' Env='frontend'/>
+    
+    <vars store="link=Australia" currency='label=$AUD' firstname='MagentoAXOrder08' lastname='uat1AU' telephone='032141568' email='new' password='kmd12345' street1='249 Park Street' street2='Street2' suburb='South Melbourne' postcode='3025' city='Melbourne' country='label=Australia' region='label=Victoria' productFile='AU_Products_08.xml' shippingMethod='' SCM='' Env='frontend'/>
+    
+    <vars store="link=Australia" currency='label=$AUD' firstname='MagentoAXOrder09' lastname='uat1AU' telephone='032141568' email='new' password='kmd12345' street1='249 Park Street' street2='Street2' suburb='South Melbourne' postcode='3025' city='Melbourne' country='label=Australia' region='label=Victoria' productFile='AU_Products_09.xml' shippingMethod='' SCM='' Env='frontend'/>
+    
+    <vars store="link=Australia" currency='label=$AUD' firstname='MagentoAXOrder10' lastname='uat1AU' telephone='032141568' email='new' password='kmd12345' street1='249 Park Street' street2='Street2' suburb='South Melbourne' postcode='3025' city='Melbourne' country='label=Australia' region='label=Victoria' productFile='AU_Products_10.xml' shippingMethod='' SCM='' Env='frontend'/>
+    
+    <vars store="link=Australia" currency='label=¥CNY' firstname='MagentoAXOrder11' lastname='uat1AU' telephone='032141568' email='new' password='kmd12345' street1='249 Park Street' street2='Street2' suburb='South Melbourne' postcode='3025' city='Melbourne' country='label=Australia' region='label=Victoria' productFile='AU_Products_11.xml' shippingMethod='' SCM='' Env='frontend'/>
+    
+    <vars store="link=Australia" currency='label=$AUD' firstname='MagentoAXOrder12' lastname='uat1AU' telephone='032141568' email='new' password='kmd12345' street1='249 Park Street' street2='Street2' suburb='South Melbourne' postcode='3025' city='Melbourne' country='label=Australia' region='label=Victoria' productFile='AU_Products_12.xml' shippingMethod='' SCM='' Env='frontend'/>
+    
+    <vars store="link=Australia" currency='label=$AUD' firstname='MagentoAXOrder13' lastname='uat1AU' telephone='032141568' email='new' password='kmd12345' street1='249 Park Street' street2='Street2' suburb='South Melbourne' postcode='3025' city='Melbourne' country='label=Australia' region='label=Victoria' productFile='AU_Products_13.xml' shippingMethod='' SCM='' Env='frontend'/>
+    
+    <vars store="link=Australia" currency='label=$AUD' firstname='MagentoAXOrder14' lastname='uat1AU' telephone='032141568' email='new' password='kmd12345' street1='249 Park Street' street2='Street2' suburb='South Melbourne' postcode='3025' city='Melbourne' country='label=Australia' region='label=Victoria' productFile='AU_Products_14.xml' shippingMethod='' SCM='' Env='frontend'/>
+    
+    <vars store="link=Australia" currency='label=$AUD' firstname='MagentoAXOrder15' lastname='uat1AU' telephone='032141568' email='new' password='kmd12345' street1='249 Park Street' street2='Street2' suburb='South Melbourne' postcode='3025' city='Melbourne' country='label=Australia' region='label=Victoria' productFile='AU_Products_15.xml' shippingMethod='' SCM='' Env='frontend'/>
+    
+    <vars store="link=Australia" currency='label=$AUD' firstname='MagentoAXOrder16' lastname='uat1AU' telephone='032141568' email='new' password='kmd12345' street1='249 Park Street' street2='Street2' suburb='South Melbourne' postcode='3025' city='Melbourne' country='label=Australia' region='label=Victoria' productFile='AU_Products_16.xml' shippingMethod='' SCM='' Env='frontend'/>
+    
+    <vars store="link=Australia" currency='label=$AUD' firstname='MagentoAXOrder17' lastname='uat1AU' telephone='032141568' email='new' password='kmd12345' street1='249 Park Street' street2='Street2' suburb='South Melbourne' postcode='3025' city='Melbourne' country='label=Australia' region='label=Victoria' productFile='AU_Products_17.xml' shippingMethod='' SCM='' Env='frontend'/>
+    
+    <vars store="link=Australia" currency='label=$AUD' firstname='MagentoAXOrder18' lastname='uat1AU' telephone='032141568' email='new' password='kmd12345' street1='249 Park Street' street2='Street2' suburb='South Melbourne' postcode='3025' city='Melbourne' country='label=Australia' region='label=Victoria' productFile='AU_Products_18.xml' shippingMethod='' SCM='' Env='frontend'/>
+    
+    <vars store="link=Australia" currency='label=$AUD' firstname='MagentoAXOrder19' lastname='uat1AU' telephone='032141568' email='new' password='kmd12345' street1='249 Park Street' street2='Street2' suburb='South Melbourne' postcode='3025' city='Melbourne' country='label=Australia' region='label=Victoria' productFile='AU_Products_19.xml' shippingMethod='' SCM='' Env='frontend'/>
+    
+    <vars store="link=Australia" currency='label=$AUD' firstname='MagentoAXOrder20' lastname='uat1AU' telephone='032141568' email='new' password='kmd12345' street1='249 Park Street' street2='Street2' suburb='South Melbourne' postcode='3025' city='Melbourne' country='label=Australia' region='label=Victoria' productFile='AU_Products_20.xml' shippingMethod='' SCM='' Env='frontend'/>
+    
+    <vars store="link=Australia" currency='label=$HKD' firstname='MagentoAXOrder21' lastname='uat1AU' telephone='032141568' email='new' password='kmd12345' street1='249 Park Street' street2='Street2' suburb='South Melbourne' postcode='3025' city='Melbourne' country='label=Australia' region='label=Victoria' productFile='AU_Products_21.xml' shippingMethod='' SCM='' Env='frontend'/>
+
+    <vars store="link=Australia" currency='label=¥JPY' firstname='MagentoAXOrder22' lastname='uat1AU' telephone='032141568' email='new' password='kmd12345' street1='249 Park Street' street2='Street2' suburb='South Melbourne' postcode='3025' city='Melbourne' country='label=Australia' region='label=Victoria' productFile='AU_Products_22.xml' shippingMethod='' SCM='' Env='frontend'/>
+    
+    <vars store="link=Australia" currency='label=$AUD' firstname='MagentoAXOrder23' lastname='uat1AU' telephone='032141568' email='new' password='kmd12345' street1='249 Park Street' street2='Street2' suburb='South Melbourne' postcode='3025' city='Melbourne' country='label=Australia' region='label=Victoria' productFile='AU_Products_23.xml' shippingMethod='' SCM='' Env='frontend'/>
+    2    <vars store="link=Australia" currency='label=$AUD' firstname='MagentoAXOrder24' lastname='uat1AU' telephone='032141568' email='new' password='kmd12345' street1='249 Park Street' street2='Street2' suburb='South Melbourne' postcode='3025' city='Melbourne' country='label=Australia' region='label=Victoria' productFile='AU_Products_24.xml' shippingMethod='' SCM='' Env='frontend'/>
+    
+    <vars store="link=Australia" currency='label=$HKD' firstname='MagentoAXOrder25' lastname='uat1AU' telephone='032141568' email='new' password='kmd12345' street1='249 Park Street' street2='Street2' suburb='South Melbourne' postcode='3025' city='Melbourne' country='label=Australia' region='label=Victoria' productFile='AU_Products_25.xml' shippingMethod='' SCM='' Env='frontend'/>
+    
+    <vars store="link=Australia" currency='label=$AUD' firstname='MagentoAXOrder26' lastname='uat1AU' telephone='032141568' email='new' password='kmd12345' street1='249 Park Street' street2='Street2' suburb='South Melbourne' postcode='3025' city='Melbourne' country='label=Australia' region='label=Victoria' productFile='AU_Products_26.xml' shippingMethod='' SCM='' Env='frontend'/>
+    
+    <vars store="link=Australia" currency='label=¥JPY' firstname='MagentoAXOrder27' lastname='uat1AU' telephone='032141568' email='new' password='kmd12345' street1='249 Park Street' street2='Street2' suburb='South Melbourne' postcode='3025' city='Melbourne' country='label=Australia' region='label=Victoria' productFile='AU_Products_27.xml' shippingMethod='' SCM='' Env='frontend'/>
+    
+    <vars store="link=Australia" currency='label=$AUD' firstname='MagentoAXOrder28' lastname='uat1AU' telephone='032141568' email='new' password='kmd12345' street1='249 Park Street' street2='Street2' suburb='South Melbourne' postcode='3025' city='Melbourne' country='label=Australia' region='label=Victoria' productFile='AU_Products_28.xml' shippingMethod='' SCM='' Env='frontend'/>
+    
+    <vars store="link=Australia" currency='label=$AUD' firstname='MagentoAXOrder29' lastname='uat1AU' telephone='032141568' email='new' password='kmd12345' street1='249 Park Street' street2='Street2' suburb='South Melbourne' postcode='3025' city='Melbourne' country='label=Australia' region='label=Victoria' productFile='AU_Products_29.xml' shippingMethod='' SCM='' Env='frontend'/>
+    
+    <vars store="link=Australia" currency='label=$AUD' firstname='MagentoAXOrder30' lastname='uat1AU' telephone='032141568' email='new' password='kmd12345' street1='249 Park Street' street2='Street2' suburb='South Melbourne' postcode='3025' city='Melbourne' country='label=Australia' region='label=Victoria' productFile='AU_Products_30.xml' shippingMethod='' SCM='' Env='frontend'/>
+    
+    <vars store="link=Australia" currency='label=¥JPY' firstname='MagentoAXOrder31' lastname='uat1AU' telephone='032141568' email='new' password='kmd12345' street1='249 Park Street' street2='Street2' suburb='South Melbourne' postcode='3025' city='Melbourne' country='label=Australia' region='label=Victoria' productFile='AU_Products_31.xml' shippingMethod='' SCM='' Env='frontend'/>
+    
+    <vars store="link=Australia" currency='label=$AUD' firstname='MagentoAXOrder32' lastname='uat1AU' telephone='032141568' email='new' password='kmd12345' street1='249 Park Street' street2='Street2' suburb='South Melbourne' postcode='3025' city='Melbourne' country='label=Australia' region='label=Victoria' productFile='AU_Products_32.xml' shippingMethod='' SCM='' Env='frontend'/>
+    
+    <vars store="link=Australia" currency='label=$AUD' firstname='MagentoAXOrder33' lastname='uat1AU' telephone='032141568' email='new' password='kmd12345' street1='249 Park Street' street2='Street2' suburb='South Melbourne' postcode='3025' city='Melbourne' country='label=Australia' region='label=Victoria' productFile='AU_Products_33.xml' shippingMethod='' SCM='' Env='frontend'/>
+    
+    <vars store="link=Australia" currency='label=$AUD' firstname='MagentoAXOrder34' lastname='uat1AU' telephone='032141568' email='new' password='kmd12345' street1='249 Park Street' street2='Street2' suburb='South Melbourne' postcode='3025' city='Melbourne' country='label=Australia' region='label=Victoria' productFile='AU_Products_34.xml' shippingMethod='' SCM='' Env='frontend'/>
+    
+    <vars store="link=Australia" currency='label=$AUD' firstname='MagentoAXOrder35' lastname='uat1AU' telephone='032141568' email='new' password='kmd12345' street1='249 Park Street' street2='Street2' suburb='South Melbourne' postcode='3025' city='Melbourne' country='label=Australia' region='label=Victoria' productFile='AU_Products_35.xml' shippingMethod='' SCM='' Env='frontend'/>
+    
+    <vars store="link=Australia" currency='label=$AUD' firstname='MagentoAXOrder36' lastname='uat1AU' telephone='032141568' email='new' password='kmd12345' street1='249 Park Street' street2='Street2' suburb='South Melbourne' postcode='3025' city='Melbourne' country='label=Australia' region='label=Victoria' productFile='AU_Products_36.xml' shippingMethod='' SCM='' Env='frontend'/>
+    
+    <vars store="link=Australia" currency='label=$AUD' firstname='MagentoAXOrder37' lastname='uat1AU' telephone='032141568' email='new' password='kmd12345' street1='249 Park Street' street2='Street2' suburb='South Melbourne' postcode='3025' city='Melbourne' country='label=Australia' region='label=Victoria' productFile='AU_Products_37.xml' shippingMethod='' SCM='' Env='frontend'/>
+    
+    <vars store="link=Australia" currency='label=¥JPY' firstname='MagentoAXOrder38' lastname='uat1AU' telephone='032141568' email='new' password='kmd12345' street1='249 Park Street' street2='Street2' suburb='South Melbourne' postcode='3025' city='Melbourne' country='label=Australia' region='label=Victoria' productFile='AU_Products_38.xml' shippingMethod='' SCM='' Env='frontend'/>
+    
+    <vars store="link=Australia" currency='label=¥CNY' firstname='MagentoAXOrder39' lastname='uat1AU' telephone='032141568' email='new' password='kmd12345' street1='249 Park Street' street2='Street2' suburb='South Melbourne' postcode='3025' city='Melbourne' country='label=Australia' region='label=Victoria' productFile='AU_Products_39.xml' shippingMethod='' SCM='' Env='frontend'/>
+    
+    <vars store="link=Australia" currency='label=¥JPY' firstname='MagentoAXOrder40' lastname='uat1AU' telephone='032141568' email='new' password='kmd12345' street1='249 Park Street' street2='Street2' suburb='South Melbourne' postcode='3025' city='Melbourne' country='label=Australia' region='label=Victoria' productFile='AU_Products_40.xml' shippingMethod='' SCM='' Env='frontend'/>
+    
+
+
+
+
+
+
     <vars store="link=Australia" currency='label=$AUD' firstname='AXTradeAndLogistics' lastname='uat1' telephone='032141568' email='new' password='' street1='249 Park Street' street2='Street2' suburb='South Melbourne' postcode='3025' city='Melbourne' country='label=Australia' region='label=Victoria' productFile='Products_lessthan100_AU.xml' shippingMethod='' SCM='' Env='frontend'/>
     
     <vars store="link=Australia" currency='label=$AUD' firstname='AXTradeAndLogistics' lastname='uat1' telephone='032141568' email='new' password='' street1='249 Park Street' street2='Street2' suburb='South Melbourne' postcode='3025' city='Melbourne' country='label=Australia' region='label=Victoria' productFile='Products_ClearanceRangeMulti.xml' shippingMethod='' SCM='' Env='frontend'/>
     
-    <vars store="link=Australia" currency='label=$AUD' firstname='AXTradeAndLogistics' lastname='uat1' telephone='032141568' email='new' password='' street1='249 Park Street' street2='Street2' suburb='South Melbourne' postcode='3025' city='Melbourne' country='label=Australia' region='label=Victoria' productFile='Products_RegularSpecialMixed.xml' shippingMethod='' SCM='' Env='frontend'/>
-<!--    
+    
+   
    
     <vars store="link=United Kingdom" currency='' firstname='Phil' lastname='UAT1' telephone='032141568' email='new' password='kmd12345' street1='13 Manor Place' street2='Street2' suburb='' postcode='OX1 3UW' city='Oxford' country='label=United Kingdom' region='' productFile='SKU_summitOnly.xml' shippingMethod='' SCM='' Env='frontend'/>
     -->

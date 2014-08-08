@@ -38,7 +38,7 @@
 </tr>
 <tr>
 	<td>store</td>
-	<td>OrdersForAX</td>
+	<td>MagentoAXIntegration</td>
 	<td>testName</td>
 </tr>
 <tr>
@@ -164,6 +164,11 @@
 <tr>
 	<td>call</td>
 	<td>delectAllItemsInCart</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=span.logo_large.sprite</td>
 	<td></td>
 </tr>
 <tr>
@@ -322,8 +327,38 @@
 	<td></td>
 </tr>
 <tr>
-	<td>waitForElementNotPresent</td>
-	<td>css=div.control-group &gt; ul.messages &gt; li.error-msg &gt; ul &gt; li</td>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeElementPresent</td>
+	<td>css=li.error-msg &gt; ul &gt; li</td>
+	<td>shippingError</td>
+</tr>
+<tr>
+	<td>while</td>
+	<td>${shippingError}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=billing_use_for_shipping_yes</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>6000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeElementPresent</td>
+	<td>css=li.error-msg &gt; ul &gt; li</td>
+	<td>shippingError</td>
+</tr>
+<tr>
+	<td>endWhile</td>
+	<td></td>
 	<td></td>
 </tr>
 <tr>
@@ -334,11 +369,6 @@
 <tr>
 	<td>payByCrediCard</td>
 	<td></td>
-	<td></td>
-</tr>
-<tr>
-	<td>pause</td>
-	<td>1000</td>
 	<td></td>
 </tr>
 <tr>

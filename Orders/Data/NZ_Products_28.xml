@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testdata>
+    
+
+
+    <vars sku='50152911' size='' quantity='2'/>
+
+    <vars sku='61158602' size='label=1LTR' quantity='2'/>
+
+    <vars sku='40628639' size='' quantity='2'/>
+   <!-- 
+
+    <vars sku='13772C94' size='label=16' quantity=''/>
+    <vars sku='50152911' size='' quantity=''/>
+    <vars sku='61466911' size='' quantity=''/>
+    <vars sku='13930504' size='' quantity=''/>
+    <vars sku='61334C38' size='label=350ML' quantity=''/>
+    <vars sku='61158602' size='label=1LTR' quantity=''/>
+    <vars sku='40647902' size='label=30LTR' quantity=''/>
+    <vars sku='40633302' size='label=L' quantity=''/>
+    <vars sku='40628639' size='' quantity=''/>
+
+
+   	<vars sku='' size='label=' quantity=''/>
+    <vars sku='' size='label=' quantity=''/>
+    <vars sku='' size='label=' quantity=''/>
+    <vars sku='' size='label=' quantity=''/>
+    <vars sku='' size='label=' quantity=''/>
+    <vars sku='' size='label=' quantity=''/>
+    <vars sku='' size='label=' quantity=''/>
+    <vars sku='' size='label=' quantity=''/>
+    <vars sku='' size='label=' quantity=''/>
+    
+    
+ 
+    	here is a example to make a proper product data to test 
+    <vars sku='12476902' size='label=10' quantity='10'/>
+
+  <vars sku='evoucher' size='eVoucher Gift Card - Kids' quantity='20'/>
+    <vars sku='summit club' size='' quantity=''/>
+    
+    <vars sku='13583902' size='label=M (In Clearance)' quantity='1'/>
+    <vars sku='13747055' size='label=10' quantity='2'/>
+    <vars sku='13252500' size='label=10' quantity=''/>
+    <vars sku='40508633' size='' quantity=''/>
+    <vars sku='13037716' size='label=XXL (In Clearance)' quantity=''/>
+    <vars sku='13035015' size='label=XL' quantity=''/>
+    <vars sku='13024D30' size='label=12' quantity='3'/>
+    <vars sku='13026033' size='label=8' quantity=''/>
+    <vars sku='40552B34' size='label=26LTR' quantity=''/>
+    <vars sku='33064553' size='label=UK11' quantity=''/>
+
+
+    eVoucher Gift Card - Hiking
+    eVoucher Gift Card - Yacht
+    eVoucher Gift Card - Kids
+    eVoucher Gift Card - Volcano
+    eVoucher Gift Card - Rainbow
+	-->
+</testdata>

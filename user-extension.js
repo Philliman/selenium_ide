@@ -1,15 +1,17 @@
 var gotoLabels= {};
 var whileLabels = {};
 var timeToWait = 20000;
-var backendFirstname_locator = "xpath=html/body/div[1]/div[2]/div/div/div[2]/div/div[3]/form/div[5]/table/tbody/tr/td[2]/div[3]/div/div[2]/div/table/tbody/tr[2]/td[2]/input";
-var backendLastname_locator = "xpath=html/body/div[1]/div[2]/div/div/div[2]/div/div[3]/form/div[5]/table/tbody/tr/td[2]/div[3]/div/div[2]/div/table/tbody/tr[4]/td[2]/input";
-var backendStreet1_locator = "xpath=html/body/div[1]/div[2]/div/div/div[2]/div/div[3]/form/div[5]/table/tbody/tr/td[2]/div[3]/div/div[2]/div/table/tbody/tr[7]/td[2]/div[1]/input";
-var backendStreet2_locator = "xpath=html/body/div[1]/div[2]/div/div/div[2]/div/div[3]/form/div[5]/table/tbody/tr/td[2]/div[3]/div/div[2]/div/table/tbody/tr[7]/td[2]/div[2]/input";
-var backendSuburb_locator = "xpath=html/body/div[1]/div[2]/div/div/div[2]/div/div[3]/form/div[5]/table/tbody/tr/td[2]/div[3]/div/div[2]/div/table/tbody/tr[8]/td[2]/input";
-var backendPostcode_locator = "xpath=html/body/div[1]/div[2]/div/div/div[2]/div/div[3]/form/div[5]/table/tbody/tr/td[2]/div[3]/div/div[2]/div/table/tbody/tr[11]/td[2]/input";
-var backendCity_locator = "xpath=html/body/div[1]/div[2]/div/div/div[2]/div/div[3]/form/div[5]/table/tbody/tr/td[2]/div[3]/div/div[2]/div/table/tbody/tr[15]/td[2]/input";
-var backendTelephone_locator = "xpath=html/body/div[1]/div[2]/div/div/div[2]/div/div[3]/form/div[5]/table/tbody/tr/td[2]/div[3]/div/div[2]/div/table/tbody/tr[12]/td[2]/input";
-var backednCountry_locator ="xpath=html/body/div[1]/div[2]/div/div/div[2]/div/div[3]/form/div[5]/table/tbody/tr/td[2]/div[3]/div/div[2]/div/table/tbody/tr[9]/td[2]/select"
+var backendFieldsPrefix ="xpath=html/body/div[1]/div[2]/div/div/div[2]/div/div[3]/form/div[5]/table/tbody/tr/td[2]/div[3]/div["
+var backendFirstname_locator    = "]/div[2]/div/table/tbody/tr[2]/td[2]/input";
+var backendLastname_locator     = "]/div[2]/div/table/tbody/tr[4]/td[2]/input";
+var backendStreet1_locator      = "]/div[2]/div/table/tbody/tr[7]/td[2]/div[1]/input";
+var backendStreet2_locator      = "]/div[2]/div/table/tbody/tr[7]/td[2]/div[2]/input";
+var backendSuburb_locator       = "]/div[2]/div/table/tbody/tr[8]/td[2]/input";
+var backendPostcode_locator     = "]/div[2]/div/table/tbody/tr[11]/td[2]/input";
+var backendCity_locator         = "]/div[2]/div/table/tbody/tr[15]/td[2]/input";
+var backendTelephone_locator    = "]/div[2]/div/table/tbody/tr[12]/td[2]/input";
+var backednCountry_locator      = "]/div[2]/div/table/tbody/tr[9]/td[2]/select";
+
 Selenium.prototype.reset = function() {
     this.initialiseLabels();
     this.defaultTimeout = Selenium.DEFAULT_TIMEOUT;
@@ -238,8 +240,8 @@ Selenium.prototype.doVerifyDetailsOnInfoPage = function(){
 
 Selenium.prototype.doAdminLogin = function(){
     if (this.isElementPresent("id=login")){
-        this.doType("id=username", "phil.chang")
-        this.doType("id=login", "Feng0919")
+        this.doType("id=username", "taf_tester")
+        this.doType("id=login", "kmd12345")
         this.doClick("//input[@type='submit']")
     }   
 }
@@ -377,24 +379,24 @@ Selenium.prototype.doVerifyAccountInfoAtBackend = function(condition){
 
 Selenium.prototype.doVerifyAddressBookBackend = function(condition){
     if (condition=="old"){
-    Assert.matches(storedVars['firstname'], this.getValue(backendFirstname_locator));
-    Assert.matches(storedVars['lastname'], this.getValue(backendLastname_locator));
-    Assert.matches(storedVars['street1'], this.getValue(backendStreet1_locator));
-    Assert.matches(storedVars['street2'], this.getValue(backendStreet2_locator));
-    Assert.matches(storedVars['suburb'], this.getValue(backendSuburb_locator));
-    Assert.matches(storedVars['postcode'], this.getValue(backendPostcode_locator));
-    Assert.matches(storedVars['city'], this.getValue(backendCity_locator));
-    Assert.matches(storedVars['telephone'], this.getValue(backendTelephone_locator));
+    Assert.matches(storedVars['firstname'], this.getValue(this.doProcessBackendLocator(backendFirstname_locator)));
+    Assert.matches(storedVars['lastname'], this.getValue(this.doProcessBackendLocator(ackendLastname_locator)));
+    Assert.matches(storedVars['street1'], this.getValue(this.doProcessBackendLocator(backendStreet1_locator)));
+    Assert.matches(storedVars['street2'], this.getValue(this.doProcessBackendLocator(backendStreet2_locator)));
+    Assert.matches(storedVars['suburb'], this.getValue(this.doProcessBackendLocator(backendSuburb_locator)));
+    Assert.matches(storedVars['postcode'], this.getValue(this.doProcessBackendLocator(backendPostcode_locator)));
+    Assert.matches(storedVars['city'], this.getValue(this.doProcessBackendLocator(backendCity_locator)));
+    Assert.matches(storedVars['telephone'], this.getValue(this.doProcessBackendLocator(backendTelephone_locator)));
     }
     else if (condition == "new"){
-    Assert.matches(storedVars['_firstname'], this.getValue(backendFirstname_locator));
-    Assert.matches(storedVars['_lastname'], this.getValue(backendLastname_locator));
-    Assert.matches(storedVars['_street1'], this.getValue(backendStreet1_locator));
-    Assert.matches(storedVars['_street2'], this.getValue(backendStreet2_locator));
-    Assert.matches(storedVars['_suburb'], this.getValue(backendSuburb_locator));
-    Assert.matches(storedVars['_postcode'], this.getValue(backendPostcode_locator));
-    Assert.matches(storedVars['_city'], this.getValue(backendCity_locator));
-    Assert.matches(storedVars['_telephone'], this.getValue(backendTelephone_locator));
+    Assert.matches(storedVars['_firstname'], this.getValue(this.doProcessBackendLocator(backendFirstname_locator)));
+    Assert.matches(storedVars['_lastname'], this.getValue(this.doProcessBackendLocator(backendLastname_locator)));
+    Assert.matches(storedVars['_street1'], this.getValue(this.doProcessBackendLocator(backendStreet1_locator)));
+    Assert.matches(storedVars['_street2'], this.getValue(this.doProcessBackendLocator(backendStreet2_locator)));
+    Assert.matches(storedVars['_suburb'], this.getValue(this.doProcessBackendLocator(backendSuburb_locator)));
+    Assert.matches(storedVars['_postcode'], this.getValue(this.doProcessBackendLocator(backendPostcode_locator)));
+    Assert.matches(storedVars['_city'], this.getValue(this.doProcessBackendLocator(backendCity_locator)));
+    Assert.matches(storedVars['_telephone'], this.getValue(this.doProcessBackendLocator(backendTelephone_locator)));
     }
     else this.doEcho("No condition found, condition is required. old or new");
 }
@@ -420,26 +422,26 @@ Selenium.prototype.doEnterAccountInfoAtBackend = function(condition){
 
 Selenium.prototype.doEnterAddressBookBackend = function(condition){
     if (condition=="old"){
-    this.doType(backendFirstname_locator, storedVars['firstname']);
-    this.doType(backendLastname_locator, storedVars['lastname']);
-    this.doType(backendStreet1_locator, storedVars['street1']);
-    this.doType(backendStreet2_locator, storedVars['street2']);
-    this.doType(backendSuburb_locator, storedVars['suburb']);
-    this.doType(backendPostcode_locator, storedVars['postcode']);
-    this.doType(backendCity_locator, storedVars['city']);
-    this.doType(backendTelephone_locator, storedVars['telephone']);
-    this.doSelect(backednCountry_locator, storedVars['country']);
+    this.doType(this.doProcessBackendLocator(backendFirstname_locator), storedVars['firstname']);
+    this.doType(this.doProcessBackendLocator(backendLastname_locator), storedVars['lastname']);
+    this.doType(this.doProcessBackendLocator(backendStreet1_locator), storedVars['street1']);
+    this.doType(this.doProcessBackendLocator(backendStreet2_locator), storedVars['street2']);
+    this.doType(this.doProcessBackendLocator(backendSuburb_locator), storedVars['suburb']);
+    this.doType(this.doProcessBackendLocator(backendPostcode_locator), storedVars['postcode']);
+    this.doType(this.doProcessBackendLocator(backendCity_locator), storedVars['city']);
+    this.doType(this.doProcessBackendLocator(backendTelephone_locator), storedVars['telephone']);
+    this.doSelect(this.doProcessBackendLocator(backednCountry_locator), storedVars['country']);
     }
     else if (condition == "new"){
-    this.doType(backendFirstname_locator, storedVars['_firstname']);
-    this.doType(backendLastname_locator, storedVars['_lastname']);
-    this.doType(backendStreet1_locator, storedVars['_street1']);
-    this.doType(backendStreet2_locator, storedVars['_street2']);
-    this.doType(backendSuburb_locator, storedVars['_suburb']);
-    this.doType(backendPostcode_locator, storedVars['_postcode']);
-    this.doType(backendCity_locator, storedVars['_city']);
-    this.doType(backendTelephone_locator, storedVars['_telephone']);
-    this.doSelect(backednCountry_locator, storedVars['_country']);
+    this.doType(this.doProcessBackendLocator(backendFirstname_locator), storedVars['_firstname']);
+    this.doType(this.doProcessBackendLocator(backendLastname_locator), storedVars['_lastname']);
+    this.doType(this.doProcessBackendLocator(backendStreet1_locator), storedVars['_street1']);
+    this.doType(this.doProcessBackendLocator(backendStreet2_locator), storedVars['_street2']);
+    this.doType(this.doProcessBackendLocator(backendSuburb_locator), storedVars['_suburb']);
+    this.doType(this.doProcessBackendLocator(backendPostcode_locator), storedVars['_postcode']);
+    this.doType(this.doProcessBackendLocator(backendCity_locator), storedVars['_city']);
+    this.doType(this.doProcessBackendLocator(backendTelephone_locator), storedVars['_telephone']);
+    this.doSelect(this.doProcessBackendLocator(backednCountry_locator), storedVars['_country']);
     }
     else this.doEcho("No condition found, condition is required. old or new");
 }
@@ -479,4 +481,74 @@ Selenium.prototype.doLogout = function(){
     if(this.isElementPresent("id=logout-link")){
        this.doClick("id=logout-link")
     } 
+}
+
+
+Selenium.prototype.doSelectAddressSection = function(addressToSelect){
+    
+    var i = 1;
+    var addressSection = "xpath=html/body/div[1]/div[2]/div/div/div[2]/div/div[3]/form/div[5]/table/tbody/tr/td[1]/ul/li[" + i.toString() + "]";
+
+    if (addressToSelect == "billingAddress"){
+        var defaultAddressChecked_Xpath = "/div/span[1]/input";
+    }
+    else if (addressToSelect == "shippingAddress"){
+        var defaultAddressChecked_Xpath = "/div/span[2]/input";
+    }
+    else this.doEcho("Please give a address to select");   
+
+    while(this.isElementPresent(addressSection)){
+        if(this.isChecked(addressSection + defaultAddressChecked_Xpath)){
+            this.doClick(addressSection);
+            break;
+        }
+        i++;   
+        addressSection = "xpath=html/body/div[1]/div[2]/div/div/div[2]/div/div[3]/form/div[5]/table/tbody/tr/td[1]/ul/li[" + i.toString() + "]";
+    }
+    return i;
+}
+
+
+
+Selenium.prototype.doVerifyCRMAddressBooks = function(addressToSelect = "billingAddress" ){
+    var div = this.doSelectAddressSection(addressToSelect);
+
+    if (addressToSelect=="billingAddress"){
+    Assert.matches(storedVars['FirstName'], this.getValue(this.doProcessBackendLocator(backendFirstname_locator, div)));
+    Assert.matches(storedVars['LastName'], this.getValue(this.doProcessBackendLocator(backendLastname_locator, div)));
+    Assert.matches(storedVars['address1_line1'], this.toProperCase(this.getValue(this.doProcessBackendLocator(backendStreet1_locator, div))));
+    Assert.matches(storedVars['address1_line2'], this.toProperCase(this.getValue(this.doProcessBackendLocator(backendStreet2_locator, div))));
+    Assert.matches(storedVars['address1_line3'], this.toProperCase(this.getValue(this.doProcessBackendLocator(backendSuburb_locator, div))));
+    Assert.matches(storedVars['postCode'], this.getValue(this.doProcessBackendLocator(backendPostcode_locator, div)).toUpperCase());
+    Assert.matches(storedVars['address1_city'], this.getValue(this.doProcessBackendLocator(backendCity_locator, div)).toUpperCase());
+    Assert.matches(storedVars['HomePhone'], this.getValue(this.doProcessBackendLocator(backendTelephone_locator, div)));
+    }
+    else if (addressToSelect == "shippingAddress"){
+    Assert.matches(storedVars['address2_line1'], this.toProperCase(this.getValue(this.doProcessBackendLocator(backendStreet1_locator, div))));
+    Assert.matches(storedVars['address2_line2'], this.toProperCase(this.getValue(this.doProcessBackendLocator(backendStreet2_locator, div))));
+    Assert.matches(storedVars['address2_line3'], this.toProperCase(this.getValue(this.doProcessBackendLocator(backendSuburb_locator, div))));
+    Assert.matches(storedVars['ShippingPostCode'], this.getValue(this.doProcessBackendLocator(backendPostcode_locator, div)).toUpperCase());
+    Assert.matches(storedVars['address2_city'], this.getValue(this.doProcessBackendLocator(backendCity_locator, div)).toUpperCase());
+    }
+    else this.doEcho("No condition found, condition is required. Please enter billingAddress or shippingAddress");
+}
+
+Selenium.prototype.doProcessBackendLocator = function(Xpath, i = 1){
+
+    return backendFieldsPrefix + i.toString() + Xpath; 
+}
+
+Selenium.prototype.doCompareTwoString = function(String1, String2){
+    if(String1 == String2){
+        this.doEcho("Passed"+ String1 +" is equal to " + String2);
+    }
+    else{
+        this.doEcho("#####Failed#####" + String1 + " isn't equal to " + String2);
+
+        
+    }
+ }
+
+Selenium.prototype.toProperCase = function (str) {
+    return str.replace(/\w\S*/g, function(txt){return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();});
 }

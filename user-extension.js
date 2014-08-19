@@ -522,6 +522,7 @@ Selenium.prototype.doVerifyCRMAddressBooks = function(addressToSelect = "billing
     Assert.matches(storedVars['postCode'], this.getValue(this.doProcessBackendLocator(backendPostcode_locator, div)).toUpperCase());
     Assert.matches(storedVars['address1_city'], this.getValue(this.doProcessBackendLocator(backendCity_locator, div)).toUpperCase());
     Assert.matches(storedVars['HomePhone'], this.getValue(this.doProcessBackendLocator(backendTelephone_locator, div)));
+    Assert.matches(storedVars['Country'], this.getSelectedLabel(this.doProcessBackendLocator(backednCountry_locator, div))); 
     }
     else if (addressToSelect == "shippingAddress"){
     Assert.matches(storedVars['address2_line1'], this.toProperCase(this.getValue(this.doProcessBackendLocator(backendStreet1_locator, div))));
@@ -529,6 +530,7 @@ Selenium.prototype.doVerifyCRMAddressBooks = function(addressToSelect = "billing
     Assert.matches(storedVars['address2_line3'], this.toProperCase(this.getValue(this.doProcessBackendLocator(backendSuburb_locator, div))));
     Assert.matches(storedVars['ShippingPostCode'], this.getValue(this.doProcessBackendLocator(backendPostcode_locator, div)).toUpperCase());
     Assert.matches(storedVars['address2_city'], this.getValue(this.doProcessBackendLocator(backendCity_locator, div)).toUpperCase());
+    Assert.matches(storedVars['ShippingCountry'], this.getSelectedLabel(this.doProcessBackendLocator(backednCountry_locator, div))); 
     }
     else this.doEcho("No condition found, condition is required. Please enter billingAddress or shippingAddress");
 }

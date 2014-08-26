@@ -12,6 +12,11 @@
 <tr><td rowspan="1" colspan="3">CreateOrdersByPaypal</td></tr>
 </thead><tbody>
 <tr>
+	<td>setTimeout</td>
+	<td>50000</td>
+	<td></td>
+</tr>
+<tr>
 	<td>echo</td>
 	<td>this test will create orders on the frontend by a xml file, please modify or create a new xml to create orders, and there has other xml file which will add item to cart by the search box, create new one if required. </td>
 	<td></td>
@@ -49,11 +54,6 @@
 <tr>
 	<td>forXml</td>
 	<td>${basePath}Orders.xml</td>
-	<td></td>
-</tr>
-<tr>
-	<td>logoutAndWait</td>
-	<td></td>
 	<td></td>
 </tr>
 <tr>
@@ -98,6 +98,11 @@
 </tr>
 <tr>
 	<td>endIf</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>logoutAndWait</td>
 	<td></td>
 	<td></td>
 </tr>
@@ -204,16 +209,6 @@
 <tr>
 	<td>enterEvoucherForm</td>
 	<td></td>
-	<td></td>
-</tr>
-<tr>
-	<td>assertTitle</td>
-	<td>Kathmandu eVoucher</td>
-	<td></td>
-</tr>
-<tr>
-	<td>clickAndWait</td>
-	<td>css=span.logo_large.sprite</td>
 	<td></td>
 </tr>
 <tr>

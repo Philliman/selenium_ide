@@ -11,7 +11,9 @@ var backendPostcode_locator     = "]/div[2]/div/table/tbody/tr[11]/td[2]/input";
 var backendCity_locator         = "]/div[2]/div/table/tbody/tr[15]/td[2]/input";
 var backendTelephone_locator    = "]/div[2]/div/table/tbody/tr[12]/td[2]/input";
 var backednCountry_locator      = "]/div[2]/div/table/tbody/tr[9]/td[2]/select";
-
+var nav_cat_prifix              = "xpath=html/body/div[1]/div/div[1]/div[3]/ul/li[";
+var nav_cat_postfix             = "]/a";
+var logo                        = "xpath=html/body/div[1]/div/div[1]/div[2]/div/a/span"
 Selenium.prototype.reset = function() {
     this.initialiseLabels();
     this.defaultTimeout = Selenium.DEFAULT_TIMEOUT;
@@ -554,3 +556,43 @@ Selenium.prototype.doCompareTwoString = function(String1, String2){
 Selenium.prototype.toProperCase = function (str) {
     return str.replace(/\w\S*/g, function(txt){return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();});
 }
+
+
+
+Selenium.prototype.doRandomSelectCatalogue= function(){
+    
+    var i = Math.floor((Math.random() * 8) + 1);
+    var catalogue = nav_cat_prifix + i.toString() + nav_cat_postfix;
+    this.doClick(catalogue);
+}
+
+Selenium.prototype.doClickLogo= function(){
+    this.doClick(logo);
+}
+
+Selenium.prototype.doRandomSelectProduct= function(){
+    
+    var i = Math.floor((Math.random() * 8) + 1);
+    var x = Math.floor((Math.random() * 4) + 1);
+    var product_prifix = "xpath=html/body/div[1]/div/div[2]/div/div/div[2]/div/div/div[2]/ul[";
+
+    var product = product_prifix + i.toString() + "]/li[" + x.toString() + "]/div/a[1]/img[1]";
+    this.doClick(product);
+}
+
+Selenium.prototype.doRandomSelectSize= function(sizes){
+    
+    var sizesArray = sizes.split(",");
+
+    sizesArray.splice(0,1);
+
+    for (var i = 0; i < 3; ++i) {
+        var size = sizesArray[Math.floor(Math.random()*sizesArray.length)];
+        if (size.contains("Out of Stock") == false){
+            size = "label=" + size;
+            this.doSelect("id=size",size);
+            break;
+        }
+    }
+}
+

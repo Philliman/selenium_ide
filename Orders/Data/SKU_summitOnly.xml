@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testdata>
-    <vars sku='evoucher' size='eVoucher Gift Card - Kids' quantity='123'/>
+    
     <vars sku='summit club' size='' quantity=''/>
      <!--
 
@@ -11,7 +11,7 @@
     	here is a example to make a proper product data to test 
     <vars sku='12476902' size='label=10' quantity='10'/>
 
-
+<vars sku='evoucher' size='eVoucher Gift Card - Kids' quantity='123'/>
     eVoucher Gift Card - Hiking
     eVoucher Gift Card - Yacht
     eVoucher Gift Card - Kids

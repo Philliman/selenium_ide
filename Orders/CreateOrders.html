@@ -23,7 +23,7 @@
 </tr>
 <tr>
 	<td>store</td>
-	<td>http://uat1.kmddev.co.nz</td>
+	<td>http://staging.kmddev.co.nz</td>
 	<td>baseURL</td>
 </tr>
 <tr>
@@ -48,12 +48,7 @@
 </tr>
 <tr>
 	<td>forXml</td>
-	<td>${basePath}Orders.xml</td>
-	<td></td>
-</tr>
-<tr>
-	<td>waitForVisible</td>
-	<td>link=Login</td>
+	<td>${basePath}CreateNewSCMOrder.xml</td>
 	<td></td>
 </tr>
 <tr>
@@ -94,6 +89,11 @@
 <tr>
 	<td>logoutAndWait</td>
 	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForVisible</td>
+	<td>link=Login</td>
 	<td></td>
 </tr>
 <tr>
@@ -162,6 +162,41 @@
 	<td></td>
 </tr>
 <tr>
+	<td>if</td>
+	<td>javascript{storedVars['SCM']=='' &amp;&amp; storedVars['email']!='new' &amp;&amp; storedVars['password']!=''}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Login</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=email</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=email</td>
+	<td>${email}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=pass</td>
+	<td>${password}</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>xpath=(//button[@type='submit'])[5]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>endIf</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
 	<td>call</td>
 	<td>delectAllItemsInCart</td>
 	<td></td>
@@ -174,6 +209,11 @@
 <tr>
 	<td>forXml</td>
 	<td>${basePath}${productFile}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>if</td>
+	<td>javascript{storedVars['sku']=='evoucher' || storedVars['sku']=='summit club' }</td>
 	<td></td>
 </tr>
 <tr>
@@ -203,6 +243,61 @@
 </tr>
 <tr>
 	<td>enterEvoucherForm</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>else</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>summit club process</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//div[@id='summit-club']/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTitle</td>
+	<td>Summit Club</td>
+	<td></td>
+</tr>
+<tr>
+	<td>if</td>
+	<td>javascript{storedVars['store']=='link=United Kingdom'}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=img[alt=&quot;Kathmandu Summit Club Membership | Kathmandu UK&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>else</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=div.offer-container &gt; a &gt; img</td>
+	<td></td>
+</tr>
+<tr>
+	<td>endIf</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTitle</td>
+	<td>Summit Club Membership</td>
+	<td></td>
+</tr>
+<tr>
+	<td>endIf</td>
 	<td></td>
 	<td></td>
 </tr>

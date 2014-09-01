@@ -153,7 +153,7 @@ Selenium.prototype.doFillCheckOutForm = function(){
     this.doType("id=billing_lastname", storedVars["lastname"]);
     this.doSelect("id=billing_country_id", storedVars["country"])
     this.doType("id=billing_telephone", storedVars["telephone"]);
-    this.doType("id=billing_email", storedVars["email"]);
+    if(storedVars['SCM']=='') this.doType("id=billing_email", storedVars["email"]);
     if(storedVars['createAccount']=='true') this.doCheck("id=customer_account_create");
     this.doType("id=billing_street1", storedVars["street1"]);
     this.doType("id=billing_street2", storedVars["street2"]);
@@ -164,8 +164,16 @@ Selenium.prototype.doFillCheckOutForm = function(){
         else{
             this.doType("id=billing_region", storedVars["region"]);}
     }
-    this.doType("id=billing_town", storedVars["city"]);
-    this.doType("css=div.control-group.postcode-standard > div.controls > #billing_postcode", storedVars["postcode"]);
+    if(storedVars['store']=='link=United Kingdom'){
+        this.doType("id=billing_postcode", storedVars["postcode"]);
+        this.doType("id=billing_city", storedVars["city"]);
+
+    }
+    else{
+        this.doType("css=div.control-group.postcode-standard > div.controls > #billing_postcode", storedVars["postcode"]);
+        this.doType("id=billing_town", storedVars["city"]);
+    }
+    
     this.doType("id=customer_comment", "need to add this to xml");
      
     if(storedVars["passwordFieldatCheckout"]==true && storedVars["password"]=="kmd12345"){
@@ -572,7 +580,7 @@ Selenium.prototype.doClickLogo= function(){
 
 Selenium.prototype.doRandomSelectProduct= function(){
     
-    var i = Math.floor((Math.random() * 8) + 1);
+    var i = Math.floor((Math.random() * 3) + 1);
     var x = Math.floor((Math.random() * 4) + 1);
     var product_prifix = "xpath=html/body/div[1]/div/div[2]/div/div/div[2]/div/div/div[2]/ul[";
 

@@ -9,8 +9,6 @@
 <table id="suiteTable" cellpadding="1" cellspacing="1" border="1" class="selenium"><tbody>
 <tr><td><b>Test Suite</b></td></tr>
 <tr><td><a href="CreateOrders.html">CreateOrders</a></td></tr>
-<tr><td><a href="extensionTest.html">extensionTest</a></td></tr>
-<tr><td><a href="orderPayByGiftCard.html">orderPayByGiftCard</a></td></tr>
 <tr><td><a href="PaypalPaymentMethod.html">PaypalPaymentMethod</a></td></tr>
 <tr><td><a href="CreateOrderByPaypal.html">CreateOrdersByPaypal</a></td></tr>
 <tr><td><a href="CreateOrdersRandomItem.html">CreateOrdersWithoutSpecificItem</a></td></tr>
